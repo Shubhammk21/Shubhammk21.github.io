@@ -1,0 +1,121 @@
+body{
+    background-color:rgb(205, 190, 190);
+    font-family:'Poppins',sans-serif;
+}
+nav{
+    width: 100%;
+    margin-top: 0px;
+    position: sticky;
+    display: flex;
+}
+#navbar{
+    width: 100%;
+    background-color: #0f0;
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    width: 10%;
+}
+#logo>img{
+    width: 80%;
+    height: 80%;
+}
+#icon{
+    width: 80%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#icon a{
+    position: relative;
+    font-size: 12px;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 7px 14px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color:gold;
+    transition: 0.25s;
+    transition-delay: 0s;
+}
+#icon a:hover{
+    color: #000;
+    transition-delay: 0.8s;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #fff,
+                0 0 50px #fff;
+}
+#icon il::before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    box-shadow: 5px -8px 0 #fff,
+                5px 8px 0 #fff;
+    transition: width 0.25s,left 0.25s,height 0.25s, box-shadow 0.25s;
+    transition-delay: 0.5s,0.25s,0s,0s;           
+}
+#icon il:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0px 0 #fff,
+    5px 0px 0 #fff;
+    transition-delay: 0s,0.25s,0.5s,0.5s;
+}
+#icon a::after{
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    box-shadow: -5px -8px 0 #fff,
+                -5px 8px 0 #fff;
+    transition: width 0.25s,left 0.25s,height 0.25s, box-shadow 0.25s;
+    transition-delay: 0.5s,0.25s,0s,0s;           
+}
+#icon a:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0px 0 #fff,
+                -5px 0px 0 #fff;
+    transition-delay: 0s,0.25s,0.5s,0.5s;
+}
+#icon span{
+    position: relative;
+    z-index: 100;
+}
+#intro{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+#intro img{
+    width: 90%;
+}
+#intro-display span{
+    font-size: 28px;
+    font-weight: 600;
+}
+#intro-display h2{
+    margin-bottom: -10px;
+}
