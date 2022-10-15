@@ -1,6 +1,9 @@
 body{
-    background-color:rgb(205, 190, 190);
+    /* background-color:rgb(205, 190, 190); */
     font-family:'Poppins',sans-serif;
+    /* background-image:url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=2000); */
+    /* background-image: url(https://img.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg?w=996&t=st=1665852058~exp=1665852658~hmac=71dfca4843baff25df8b5ae07e4808f3fe30fbd4ace86aa04cf187725ce0ef98); */
+    background-image: url(https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=996&t=st=1665852148~exp=1665852748~hmac=ac49f6aaffb667e18d1722751e9cfaab76cc8961b22f38a85881e7b3a7604168);
 }
 nav{
     width: 100%;
@@ -10,7 +13,8 @@ nav{
 }
 #navbar{
     width: 100%;
-    background-color: rgb(88, 173, 88);
+    background-color:#fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     display: flex;
     padding: 1%;
     align-items: center;
@@ -24,23 +28,25 @@ nav{
     height: 80%;
 }
 #icon{
-    width: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     flex-wrap: wrap;
 }
 #icon a{
     position: relative;
     font-size: 12px;
-    margin-right: 20px;
     display: inline-block;
-    padding: 7px 14px;
-    border: 2px solid #fff;
+    padding: 10px 20px;
+    /* border: 2px solid #fff; */
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     letter-spacing: 1px;
-    color: #fff;
-    background-color:gold;
+    color: #25cf60;
+    background-color:#fff;
     transition: 0.25s;
     transition-delay: 0s;
 }
@@ -83,9 +89,9 @@ nav{
     transform:translateY(-50%);
     width: 15px;
     height: 2px;
-    background: #fff;
-    box-shadow: -5px -8px 0 #fff,
-                -5px 8px 0 #fff;
+    background: #25cf60;
+    box-shadow: -5px -8px 0 #25cf60,
+                -5px 8px 0 #25cf60;
     transition: width 0.25s,left 0.25s,height 0.25s, box-shadow 0.25s;
     transition-delay: 0.5s,0.25s,0s,0s;           
 }
@@ -93,8 +99,8 @@ nav{
     width: 60%;
     height: 100%;
     right: -2px;
-    box-shadow: -5px 0px 0 #fff,
-                -5px 0px 0 #fff;
+    box-shadow: -5px 0px 0 #25cf60,
+                -5px 0px 0 #25cf60;
     transition-delay: 0s,0.25s,0.5s,0.5s;
 }
 #icon span{
@@ -103,11 +109,15 @@ nav{
 }
 #intro{
     display: flex;
+    box-shadow: 5px 0 10px white;
     width: 70%;
     margin: auto;
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
+}
+#intro>div{
+    justify-content: space-between;
 }
 #intro img{
     width: 90%;
@@ -118,4 +128,75 @@ nav{
 }
 #intro-display h2{
     margin-bottom: -10px;
+}
+#intro-display{
+    padding: 2%;
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
