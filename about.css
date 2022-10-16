@@ -1,13 +1,14 @@
 #amain{
     display: flex;
-    position: absolute;
     width: 60%;
+    position: relative;
     margin: auto;
     padding: 1%;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(244, 249, 250, 0.959) 0px 3px 8px;
+    color: #0f0;
 }
 #amain img{
     width: 90%;
@@ -25,7 +26,7 @@
     width: 80%;
 }
 section{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100vh;
     background-color: #111; 
@@ -52,8 +53,9 @@ i{
 
 } 
 i:hover{
+    transition: 0s;
     color: #0f0;
-    box-shadow: 0 0 120px #0f0;
+    text-shadow: 0 0 120px #0f0;
 }
 section .row div{
     animation: animate 80s linear infinite;
@@ -73,17 +75,17 @@ section .row div:nth-child(2){
 }
 @keyframes animate2{
     0%{
-        transform: translateX(0%);
+        transform: translateX(0);
     }
     100%{
         transform: translateX(-200%);
     }
 }
-section .row div:nth-child(odd) div{
+section .row:nth-child(even) div{
     animation: animate3 80s linear infinite;
     animation-delay: -80s;
 }
-section .row div:nth-child(odd) div:nth-child(2){
+section .row:nth-child(even) div:nth-child(2){
     animation: animate4 80s linear infinite;
     animation-delay: -40s;
 }
@@ -100,6 +102,6 @@ section .row div:nth-child(odd) div:nth-child(2){
         transform: translateX(-200%);
     }
     100%{
-        transform: translateX(0%);
+        transform: translateX(0);
     }
 }
