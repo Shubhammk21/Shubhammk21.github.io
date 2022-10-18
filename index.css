@@ -17,7 +17,7 @@ nav{
 }
 #navbar{
     width: 100%;
-    background-color:#111;
+    background-color:transparent;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     display: flex;
     padding: 1%;
@@ -43,41 +43,42 @@ nav{
     position: relative;
     font-size: 12px;
     display: inline-block;
-    padding: 8px 10px;
+    padding: 8px 5px;
     /* border: 2px solid #fff; */
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     color: #0f0;
     /* background-color:#; */
     transition: 0.25s;
     transition-delay: 0s;
+    
 }
 #icon a:hover{
-    color: #fff;
+    color: #222;
     transition-delay: 0.8s;
-    box-shadow: 0 0 10px #fff,
-                0 0 20px #fff,
-                0 0 30px #fff,
-                0 0 40px #fff,
-                0 0 50px #fff;
+    box-shadow: 0 0 10px #0f0,
+                0 0 20px #0f0,
+                0 0 30px #0f0,
+                0 0 40px #0f0,
+                0 0 50px #0f0;
 }
-#icon il::before{
+#icon a::before{
     content: '';
     position: absolute;
     left: -15px;
     top: 50%;
     transform:translateY(-50%);
-    width: 15px;
+    width: 10px;
     height: 2px;
-    background: #fff;
+    background-color:#222;
     box-shadow: 5px -8px 0 #fff,
                 5px 8px 0 #fff;
     transition: width 0.25s,left 0.25s,height 0.25s, box-shadow 0.25s;
     transition-delay: 0.5s,0.25s,0s,0s;           
 }
-#icon il:hover::before{
+#icon a:hover::before{
     width: 60%;
     height: 100%;
     left: -2px;
@@ -91,7 +92,7 @@ nav{
     right: -15px;
     top: 50%;
     transform:translateY(-50%);
-    width: 15px;
+    width: 10px;
     height: 2px;
     background-color: #0f0;
     box-shadow: -5px -8px 0 #0f0,
@@ -114,7 +115,7 @@ nav{
 #intro{
     display: flex;
     position: relative;
-    box-shadow: 5px 0 10px white;
+    box-shadow: 5px 0 10px #0f0;
     width: 70%;
     margin: auto;
     margin-top: 50px;
