@@ -27,8 +27,8 @@
 }
 section{
     position: absolute;
-    width: 100%;
-    height: 100vh;
+    width: 99%;
+    height: 99%;
     background-color: #111; 
     display: flex;
     flex-direction: column;
