@@ -1,9 +1,13 @@
 body{
     /* background-color:rgb(205, 190, 190); */
     font-family:'Poppins',sans-serif;
+    color: #0f0;
     /* background-image:url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=2000); */
     /* background-image: url(https://img.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg?w=996&t=st=1665852058~exp=1665852658~hmac=71dfca4843baff25df8b5ae07e4808f3fe30fbd4ace86aa04cf187725ce0ef98); */
-    background-image: url(https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=996&t=st=1665852148~exp=1665852748~hmac=ac49f6aaffb667e18d1722751e9cfaab76cc8961b22f38a85881e7b3a7604168);
+    /* background-image: url(https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=996&t=st=1665852148~exp=1665852748~hmac=ac49f6aaffb667e18d1722751e9cfaab76cc8961b22f38a85881e7b3a7604168); */
+}
+#navbar i{
+    color: #0f0;
 }
 nav{
     width: 100%;
@@ -39,7 +43,7 @@ nav{
     position: relative;
     font-size: 12px;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 10px;
     /* border: 2px solid #fff; */
     text-transform: uppercase;
     font-weight: 700;
@@ -51,7 +55,7 @@ nav{
     transition-delay: 0s;
 }
 #icon a:hover{
-    color: #000;
+    color: #fff;
     transition-delay: 0.8s;
     box-shadow: 0 0 10px #fff,
                 0 0 20px #fff,
@@ -89,9 +93,9 @@ nav{
     transform:translateY(-50%);
     width: 15px;
     height: 2px;
-    background: #25cf60;
-    box-shadow: -5px -8px 0 #25cf60,
-                -5px 8px 0 #25cf60;
+    background-color: #0f0;
+    box-shadow: -5px -8px 0 #0f0,
+                -5px 8px 0 #0f0;
     transition: width 0.25s,left 0.25s,height 0.25s, box-shadow 0.25s;
     transition-delay: 0.5s,0.25s,0s,0s;           
 }
@@ -99,8 +103,8 @@ nav{
     width: 60%;
     height: 100%;
     right: -2px;
-    box-shadow: -5px 0px 0 #25cf60,
-                -5px 0px 0 #25cf60;
+    box-shadow: -5px 0px 0 #0f0,
+                -5px 0px 0 #0f0;
     transition-delay: 0s,0.25s,0.5s,0.5s;
 }
 #icon span{
@@ -109,6 +113,7 @@ nav{
 }
 #intro{
     display: flex;
+    position: relative;
     box-shadow: 5px 0 10px white;
     width: 70%;
     margin: auto;
