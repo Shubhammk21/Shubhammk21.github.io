@@ -1,24 +1,33 @@
+.about{
+    position: relative;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+.about>h1{
+    text-align: center;
+    /* text-decoration: underline; */
+    letter-spacing: 1px;
+}
 #amain{
     display: flex;
-    width: 60%;
-    position: relative;
-    margin: auto;
+    text-align: left;
+    width: 100%;
+    align-items: center;
     padding: 1%;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
     box-shadow: rgba(244, 249, 250, 0.959) 0px 3px 8px;
     color: #0f0;
 }
 #amain img{
-    width: 90%;
-    border-radius: 100px;
+    width: 80%;
+    border-radius: 100%;
 
 }
 #amain h1{
     text-align: center;
 }
-#amain>div:nth-child(2){
+#amain>div:nth-child(1){
     width: 100%;
     padding: 2%;
 }
@@ -26,7 +35,8 @@
     width: 80%;
 }
 section{
-    position: absolute;
+    position: fixed;
+    /* z-index: -1; */
     width: 99%;
     height: 99%;
     background-color: #111; 

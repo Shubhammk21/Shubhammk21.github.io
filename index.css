@@ -12,7 +12,7 @@ body{
 }
 nav{
     width: 99%;
-    margin-top: 0px;
+    top: 0;
     position: sticky;
     display: flex;
 }
@@ -34,15 +34,16 @@ nav{
 }
 #icon{
     width: 60%;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 #icon a{
     position: relative;
-    font-size: 12px;
+    /* font-size: 12px; */
     display: inline-block;
     padding: 8px 5px;
     /* border: 2px solid #fff; */
@@ -115,16 +116,16 @@ nav{
 }
 #intro{
     display: flex;
-    /* position: relative; */
+    position: relative;
     box-shadow: 5px 0 10px #0f0;
-    width: 70%;
+    width: 60%;
     margin: auto;
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
 }
 #intro>div{
-    justify-content: space-between;
+    width: 50%;
 }
 #intro img{
     width: 90%;
@@ -216,10 +217,28 @@ nav .menu-btn i{
 input[type="checkbox"]{
     display: none;
 }
-@media (max-width:1000px){
+@media screen and (max-width:1200px){
+    #icon a{
+        /* font-size: 8px; */
+        padding: 3px 6px;
+        font-weight: 600;
+        /* gap: 2%; */
+    }
+    #icon a::after{
+        width: 7px;
+        height: 2px;
+    }
+    #icon a::before{
+        width: 0px;
+        height: 0px;
+    }
+    #icon{
+        flex-wrap: nowrap;
+        width: 75%;
+    }
 
 }
-@media (max-width:720px){
+@media screen and (max-width:880px){
     nav .menu-btn i{
         display:block;
     }
@@ -232,6 +251,7 @@ input[type="checkbox"]{
     }
     #icon a{
         width: 100%;
+        border: 1px solid #0f0;
         margin-right: 100%;
         font-size: 15px;
         display: block;
@@ -239,7 +259,7 @@ input[type="checkbox"]{
     }
     #icon{
         position: fixed;
-        top: 35px;
+        top: 55px;
         right: -110%;
         background-color: #222;
         /* height: 100vh; */
@@ -254,6 +274,14 @@ input[type="checkbox"]{
     }
     #click:checked ~#icon{
         right: 0px;
+    }
+    #icon a::after{
+        width: 10px;
+        height: 2px;
+    }
+    #icon a::before{
+        width: 10px;
+        height: 2px;
     }
 
 }

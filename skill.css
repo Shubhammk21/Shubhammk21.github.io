@@ -1,0 +1,24 @@
+.skill{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+.skill>div{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    justify-content: space-around;
+}
+.skill img{
+    width: 62px;
+    height: 62px;
+    padding: 10%;
+    margin: 10%;
+    background-color: #222;
+    /* margin-bottom: 6%; */
+    border-radius: 30px;
+    box-shadow:0px 3px 8px #0f0;
+    transform-style: preserve-3d;
+    transform: translateZ(20px)
+}
