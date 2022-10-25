@@ -3,6 +3,7 @@ body{
     font-family:'Poppins',sans-serif;
     color: #0f0;
     user-select: none;
+    scroll-behavior:smooth;
     /* background-image:url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=2000); */
     /* background-image: url(https://img.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg?w=996&t=st=1665852058~exp=1665852658~hmac=71dfca4843baff25df8b5ae07e4808f3fe30fbd4ace86aa04cf187725ce0ef98); */
     /* background-image: url(https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=996&t=st=1665852148~exp=1665852748~hmac=ac49f6aaffb667e18d1722751e9cfaab76cc8961b22f38a85881e7b3a7604168); */
@@ -43,7 +44,7 @@ nav{
 }
 #icon a{
     position: relative;
-    /* font-size: 12px; */
+    font-size: 12px;
     display: inline-block;
     padding: 8px 5px;
     /* border: 2px solid #fff; */
@@ -116,7 +117,7 @@ nav{
 }
 #intro{
     display: flex;
-    position: relative;
+    height: 400px;
     box-shadow: 5px 0 10px #0f0;
     width: 60%;
     margin: auto;
@@ -131,14 +132,28 @@ nav{
     width: 90%;
 }
 #intro-display span{
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
 }
 #intro-display h2{
-    margin-bottom: -10px;
+    line-height: 25px;
 }
 #intro-display{
     padding: 2%;
+}
+/* #intro h1{
+    border: 1px solid white;
+} */
+.wave {
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: wave-animation;
+    animation-name: wave-animation;
+    display: inline-block;
+    -webkit-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
 }
 
 /* CSS */
@@ -236,6 +251,9 @@ input[type="checkbox"]{
         flex-wrap: nowrap;
         width: 75%;
     }
+    #intro{
+        font-size: 22px;
+    }
 
 }
 @media screen and (max-width:880px){
@@ -276,12 +294,41 @@ input[type="checkbox"]{
         right: 0px;
     }
     #icon a::after{
-        width: 10px;
+        width: 180%0px;
         height: 2px;
     }
     #icon a::before{
         width: 10px;
         height: 2px;
     }
-
+    #intro{
+        width: 90%;
+        display: block;
+        height: 100%;
+    }
+    #intro>div{
+        width:90% ;
+        margin: auto;
+    }
+    #intro h2{
+        font-size: 25px;
+    }
+    #intro span{
+        font-size: 21px;
+    }
+    #intro img{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .about{
+        width: 90%;
+    }
+    #amain{
+        width: 100%;
+        display: block;
+    }
+    #amain>div{
+        width: 90%;
+    }
 }

@@ -1,8 +1,7 @@
 .about{
-    position: relative;
     width: 60%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .about>h1{
     text-align: center;
@@ -20,7 +19,7 @@
     color: #0f0;
 }
 #amain img{
-    width: 80%;
+    max-width: 80%;
     border-radius: 100%;
 
 }
@@ -36,7 +35,7 @@
 }
 section{
     position: fixed;
-    /* z-index: -1; */
+    z-index: -1;
     width: 99%;
     height: 99%;
     background-color: #111; 
@@ -113,5 +112,17 @@ section .row:nth-child(even) div:nth-child(2){
     }
     100%{
         transform: translateX(0);
+    }
+}
+@media screen and (max-width:880px){
+    .about{
+        width: 90%;
+    }
+    #amain{
+        width: 100%;
+        display: block;
+    }
+    #amain>div{
+        width: 90%;
     }
 }
