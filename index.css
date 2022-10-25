@@ -1,7 +1,7 @@
 body{
     /* background-color:rgb(205, 190, 190); */
-    font-family:'Poppins',sans-serif;
-    color: #0f0;
+    font-family:apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    color: #fff;
     user-select: none;
     scroll-behavior:smooth;
     /* background-image:url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=2000); */
@@ -13,8 +13,8 @@ body{
 }
 nav{
     width: 99%;
-    top: 0;
     position: sticky;
+    top: 0px;
     display: flex;
 }
 #navbar{
@@ -118,12 +118,14 @@ nav{
 #intro{
     display: flex;
     height: 400px;
-    box-shadow: 5px 0 10px #0f0;
+    border-radius: 5%;
+    /* box-shadow: 5px 0 10px #0f0; */
     width: 60%;
     margin: auto;
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
+    background-color:rgba(20, 8, 8, 0.71);
 }
 #intro>div{
     width: 50%;
