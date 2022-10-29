@@ -1,24 +1,63 @@
 .skill{
-    position: relative;
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: auto;
     margin-top: 60px;
+    padding: 2%;
 }
 .skill>div{
+    display: block;
+}
+#pskill,#tool{
     display: grid;
     grid-template-columns:repeat(4,1fr);
-    justify-content: space-around;
+    transform-style: preserve-3d;
+    transform: translateZ(20px)
+    /* justify-content: space-around; */
 }
 .skill img{
-    width: 62px;
-    height: 62px;
-    padding: 10%;
+    width: 72px;
+    height: 72px;
+    padding: 5%;
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+    border-radius: 20px;
+    background: linear-gradient(#0f0 0%, #fff0 70%,#1d1d1d 100%);
+    background-size: cover;
+}
+#tool>div,#pskill>div{
+    padding: 5%;
     margin: 10%;
     background-color: #222;
     /* margin-bottom: 6%; */
     border-radius: 30px;
-    box-shadow:0px 3px 8px #0f0;
     transform-style: preserve-3d;
-    transform: translateZ(20px)
+    transform: translateZ(20px);
+    background: linear-gradient(#fff0 0%, #fff0 70%,#1d1d1d 100%);
+    background-size: cover;
+    /* box-shadow: rgba(16, 16, 75, 0.759) 0px 7px 29px 0px; */
+    border-radius: 20px;
+    
 }
+#tool>div:hover, #pskill>div:hover{
+     box-shadow:0px 3px 8px #0f0;
+     
+}
+@media screen and (max-width:1200px){
+    #pskill,#tool{
+        grid-template-columns: repeat(3,auto);
+    }
+    .skill{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:880px){
+    #pskill,#tool{
+        grid-template-columns: repeat(2,auto);
+    }
+    .skill{
+        width: 80%;
+    }
+}
+
