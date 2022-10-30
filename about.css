@@ -1,5 +1,10 @@
 .about{
+    width: 100%;
+    padding: 2% 0 2% 0;
+    margin: auto;
     margin-top: 80px;
+    background-color: #0d1117;
+    
 }
 .about>h1{
     text-align: center;
@@ -10,6 +15,7 @@
     display: flex;
     text-align: left;
     width: 75%;
+    background-color:transparent;
     margin: auto;
     align-items: center;
     padding: 1%;
@@ -144,15 +150,28 @@ rect.ContributionCalendar-day[data-level='4'] {
 .calendar .width-full > .float-left {
     display: none;
 }
-
+svg:not(:root) {
+    overflow: scroll;
+}
 .calendar {
     width: 90%;
+    scroll-behavior: smooth;
     font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px;
+    border-radius: 10px;
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.js-calendar-graph-svg {
+    width: 717;
+    height: 212;
+    /* overflow:; */
+    border: 2px solid;
+    width: 100%;
+    object-fit: contain;
+
 }
 .calendar-graph text.wday,
 .calendar-graph text.month {
@@ -238,7 +257,6 @@ rect.ContributionCalendar-day[data-level='4'] {
     color: #1D75AB;
     text-decoration: none;
 }
-
 .contrib-footer {
     font-size: 11px;
     padding: 0 10px 12px;
@@ -324,9 +342,9 @@ text.ContributionCalendar-label {
 }
 @media screen and (max-width:880px){
     #amain{
-        width: 50%;
+        width: 90%;
         margin: auto;
-        background-color:rgba(20, 8, 8, 0.71);
+        background-color: "https://fakeimg.pl/300x200/";
         display: block;
         text-overflow: ellipsis;
         letter-spacing: 1px;

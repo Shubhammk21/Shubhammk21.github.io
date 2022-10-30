@@ -7,12 +7,6 @@ var VanillaTilt = (function () {
       }
     };
     
-    /**
-     * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
-     * Original idea: https://github.com/gijsroge/tilt.js
-     * MIT License.
-     * Version 1.7.2
-     */
     
     var VanillaTilt = function () {
       function VanillaTilt(element) {
@@ -363,7 +357,6 @@ var VanillaTilt = (function () {
           "overflow": "hidden",
           "pointer-events": "none"
         });
-    
         Object.assign(this.glareElement.style, {
           "position": "absolute",
           "top": "50%",
@@ -520,3 +513,11 @@ var VanillaTilt = (function () {
     return VanillaTilt;
     
     }());
+  
+//  let hover= document.querySelector("i").addEventListener("mouseenter" ,function(event){
+//         hover.style.color="#0f0";
+//   });
+
+//   hover= document.querySelector("i").addEventListener("mouseleave" ,function(event){
+//     hover.style.color="#111";
+// });

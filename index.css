@@ -9,17 +9,18 @@ body{
     /* background-image: url(https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=996&t=st=1665852148~exp=1665852748~hmac=ac49f6aaffb667e18d1722751e9cfaab76cc8961b22f38a85881e7b3a7604168); */
 }
 #navbar i{
-    color: #fff;
+    color: #0f0;
 }
 nav{
     width: 99%;
     position: sticky;
     top: 0px;
     display: flex;
+    z-index: 10000;
 }
 #navbar{
     width: 100%;
-    background-color:transparent;
+    background-color:#111;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     display: flex;
     padding: 1%;
@@ -267,13 +268,14 @@ input[type="checkbox"]{
     }
     #icon a{
         width:100% ;
-        margin: 40px 0;
+        margin: 20px 0;
     }
     #icon a{
         width: 100%;
-        border: 1px solid #0f0;
+        padding: 5%;
+        /* border: 1px solid #0f0; */
         margin-right: 100%;
-        font-size: 15px;
+        font-size: 16px;
         display: block;
         transition: 0.6s cubic-bezier(0.068, -0.55, 0.265, 1.55);
     }
@@ -296,7 +298,7 @@ input[type="checkbox"]{
         right: 0px;
     }
     #icon a::after{
-        width: 180%0px;
+        width: 180% 0px;
         height: 2px;
     }
     #icon a::before{

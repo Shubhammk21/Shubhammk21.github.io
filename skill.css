@@ -11,8 +11,8 @@
 #pskill,#tool{
     display: grid;
     grid-template-columns:repeat(4,1fr);
-    transform-style: preserve-3d;
-    transform: translateZ(20px)
+    /* transform-style: preserve-3d;
+    transform: translateZ(20px) */
     /* justify-content: space-around; */
 }
 .skill img{
@@ -20,7 +20,7 @@
     height: 72px;
     padding: 5%;
     transform-style: preserve-3d;
-    transform: translateZ(20px);
+    transform: translateZ(100px);
     border-radius: 20px;
     background: linear-gradient(#0f0 0%, #fff0 70%,#1d1d1d 100%);
     background-size: cover;
@@ -32,7 +32,7 @@
     /* margin-bottom: 6%; */
     border-radius: 30px;
     transform-style: preserve-3d;
-    transform: translateZ(20px);
+    transform: translateZ(100px);
     background: linear-gradient(#fff0 0%, #fff0 70%,#1d1d1d 100%);
     background-size: cover;
     /* box-shadow: rgba(16, 16, 75, 0.759) 0px 7px 29px 0px; */
@@ -58,6 +58,10 @@
     }
     .skill{
         width: 80%;
+    }
+    .skill img{
+        transform-style: preserve-3d;
+        transform: translateZ(60px);
     }
 }
 
