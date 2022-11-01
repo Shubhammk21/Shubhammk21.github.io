@@ -154,25 +154,24 @@ svg:not(:root) {
     overflow: scroll;
 }
 .calendar {
-    /* width: 90%; */
+    width: 80%;
+    border: 1px solid #222;
     scroll-behavior: smooth;
     font-family: Helvetica, arial;
     border-radius: 10px;
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 .js-calendar-graph-svg {
     width: 717;
     height: 212;
-    /* overflow:; */
-    border: 2px solid;
-    width: 100%;
+    width: 98%;
     object-fit: contain;
+ }
 
-}
 .calendar-graph text.wday,
 .calendar-graph text.month {
     font-size: 10px;
@@ -330,17 +329,27 @@ text.ContributionCalendar-label {
 }
 
 .graph{
-    width: 100%;
+    width: 90%;
     margin: auto;
+    margin-bottom: 40px;
 }
 .graph img,.graph-1 img{
     width: 100%;
+    
 }
 .graph-1{
-    width: 85%;
+    width: 75%;
     margin: auto;
+    margin-bottom: 40px;
+}
+#gitihubi{
+    font-size: 200%;
+    margin-top: 50px;
 }
 @media screen and (max-width:880px){
+    section .row{
+        font-size: 44px;
+    }
     #amain{
         width: 90%;
         margin: auto;
@@ -377,5 +386,25 @@ text.ContributionCalendar-label {
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         font-family: apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    }
+    .calendar {
+        width: 95%;
+    }
+    .graph{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .graph img,.graph-1 img{
+        width: 100%;
+    }
+    .graph-1{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    #gitihubi{
+        font-size: 25px;
+        margin-top: 50px;
     }
 }

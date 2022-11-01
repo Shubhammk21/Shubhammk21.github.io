@@ -1,5 +1,5 @@
 .skill{
-    width: 60%;
+    width: 65%;
     position: relative;
     text-align: center;
     margin: auto;
@@ -11,6 +11,8 @@
 }
 #pskill,#tool{
     display: grid;
+    margin-bottom: 100px;
+    margin-top: 30px;
     grid-template-columns:repeat(4,1fr);
     /* transform-style: preserve-3d;
     transform: translateZ(20px) */
@@ -62,7 +64,7 @@
     }
     .skill img{
         transform-style: preserve-3d;
-        transform: translateZ(60px);
+        transform: translateZ(20px);
     }
 }
 

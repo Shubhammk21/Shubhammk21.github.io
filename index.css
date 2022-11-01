@@ -12,7 +12,7 @@ body{
     color: #0f0;
 }
 nav{
-    width: 99%;
+    width: 101%;
     position: sticky;
     top: 0px;
     display: flex;
@@ -127,7 +127,7 @@ nav{
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
-    background-color:rgba(20, 8, 8, 0.71);
+    /* background-color:rgba(20, 8, 8, 0.71); */
 }
 #intro>div{
     width: 50%;
@@ -316,24 +316,14 @@ input[type="checkbox"]{
         margin: auto;
     }
     #intro h2{
-        font-size: 25px;
+        font-size: 28px;
     }
     #intro span{
-        font-size: 21px;
+        font-size: 24px;
     }
     #intro img{
         display: block;
         width: 100%;
         margin: auto;
-    }
-    .about{
-        width: 90%;
-    }
-    #amain{
-        width: 100%;
-        display: block;
-    }
-    #amain>div{
-        width: 90%;
     }
 }
