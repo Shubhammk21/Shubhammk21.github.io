@@ -1,5 +1,6 @@
 .skill{
     width: 60%;
+    position: relative;
     text-align: center;
     margin: auto;
     margin-top: 60px;

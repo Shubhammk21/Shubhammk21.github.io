@@ -118,6 +118,7 @@ nav{
 }
 #intro{
     display: flex;
+    position: relative;
     height: 400px;
     border-radius: 5%;
     /* box-shadow: 5px 0 10px #0f0; */
