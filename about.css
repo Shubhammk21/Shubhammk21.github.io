@@ -50,7 +50,7 @@ section{
 }
 section .row{
     position: relative;
-    width: 100%;
+    width: 99%;
     top: -50%;
     display: flex;
     padding: 10px 0;

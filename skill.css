@@ -27,10 +27,11 @@
     border-radius: 20px;
     background: linear-gradient(#0f0 0%, #fff0 70%,#1d1d1d 100%);
     background-size: cover;
+    box-shadow: rgba(184, 184, 196, 0.759) 0px 7px 29px 0px; 
 }
 #tool>div,#pskill>div{
     padding: 5%;
-    margin: 10%;
+    margin: 13%;
     background-color: #222;
     /* margin-bottom: 6%; */
     border-radius: 30px;
@@ -38,7 +39,7 @@
     transform: translateZ(100px);
     background: linear-gradient(#fff0 0%, #fff0 70%,#1d1d1d 100%);
     background-size: cover;
-    /* box-shadow: rgba(16, 16, 75, 0.759) 0px 7px 29px 0px; */
+    /* */
     border-radius: 20px;
     
 }

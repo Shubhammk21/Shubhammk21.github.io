@@ -521,3 +521,4 @@ var VanillaTilt = (function () {
 //   hover= document.querySelector("i").addEventListener("mouseleave" ,function(event){
 //     hover.style.color="#111";
 // });
+document.querySelector("#user-profile-frame > div > div.mt-4.position-relative > div > div.col-12.col-lg-10 > div.js-yearly-contributions > div:nth-child(1) > div")
