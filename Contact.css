@@ -1,0 +1,28 @@
+#contact{
+    position: relative;
+    border: 2px solid;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.contact_con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact_con>div{
+    width: 50%;
+}
+#contact img{
+    width: 90%;
+    float: left;
+}
+.contact_icon{
+    width: 80%;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-around;
+    align-items: center;
+}
