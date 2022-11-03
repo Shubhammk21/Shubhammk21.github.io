@@ -33,6 +33,15 @@
     border-radius: 100%;
 
 }
+#amain img:hover{
+    transition: 1s;
+   image-orientation: from-image;
+    width: 70%;
+    transform-origin: 5%;
+   
+    transform-style: preserve-3d;
+    box-shadow: rgba(239, 235, 235, 0.929) 0px 3px 8px;
+}
 #amain h1{
     text-align: center;
 }
