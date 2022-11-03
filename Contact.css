@@ -1,6 +1,5 @@
 #contact{
     position: relative;
-    border: 2px solid;
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -15,14 +14,127 @@
     width: 50%;
 }
 #contact img{
-    width: 90%;
-    float: left;
+    width: 100%;
+    /* float: left; */
 }
 .contact_icon{
-    width: 80%;
-    border: 1px solid;
+    width: 60%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2,auto);
-    justify-content: space-around;
-    align-items: center;
+    gap: 2%;
 }
+form{
+    width: 60%;
+    margin: auto;
+}
+.input_tag, .input_tag_text_message ,form button{
+    border: 1px solid #cfcdcd;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: text;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 90%;
+}
+.input_tag{
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+textarea {
+    text-align:left;
+    content: "";
+    font-size: 12px;
+    height: 110px;
+    resize: vertical;
+    writing-mode: horizontal-tb !important;
+    font-family: monospace;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    background-color: field;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px;
+}
+.contact_all{
+    text-align: center;
+    margin-top: 50px;
+}
+.contact h1{
+    font-size: 34px;
+}
+@media screen and (max-width:880px){
+    #contact{
+        width: 88%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .contact_con{
+        display: block;
+    }
+    .contact_con>div{
+        width: 100%;
+    }
+    #contact img{
+        width: 100%;
+        /* float: left; */
+    }
+    .contact_icon{
+        width: 65%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2%;
+    }
+    .contact_img{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    form{
+        width: 65%;
+        margin: auto;
+    }
+    .input_tag, .input_tag_text_message ,form button{
+        margin: auto;
+        border: 1px solid #cfcdcd;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: text;
+        margin-top: 20px;
+        padding-left: 20px;
+       
+    }
+    .input_tag{
+        padding-bottom: 7px;
+        padding-top: 7px;
+    }
+    .contact_all{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .contact h1{
+        font-size: 34px;
+    }
+    .button-82-front {
+        padding: 10px 20px;
+      }
+}
+
+

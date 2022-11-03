@@ -14,14 +14,14 @@ body{
 nav{
     width: 100%;
     position: sticky;
-    top:0px;
+    top:0;
     display: flex;
     z-index: 10000;
 }
 #navbar{
-    width: 99%;
+    width: 100%;
     background-color:#111;
-    box-shadow: rgba(65, 184, 52, 0.934) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(249, 247, 247, 0.45) 0px 3px 8px;
     display: flex;
     padding: 0px 1%;
     align-items: center;
@@ -31,8 +31,10 @@ nav{
     width: 10%;
 }
 #logo>img{
-    width: 80%;
-    height: 80%;
+    width: 40px;
+    height: 40%;
+    padding-top: 8px;
+    padding-bottom: 5px;
 }
 #icon{
     width: 60%;
