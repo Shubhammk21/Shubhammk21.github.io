@@ -854,11 +854,11 @@
                 <i class="fa fa-bars"></i>
             </label>
             <div id="icon">
-                <a href="index.html" class="Active"><span><i class="fa fa-home" aria-hidden="true"></i> Home</span></a>
-                <a href="AboutMe.html"><span><i class="fa-solid fa-user-tie"></i> About</span></a>
-                <a href="#"><span><i class="fa-solid fa-wrench"></i> Skills</span></a>
-                <a href="#"><span><i class="fa-duotone fa-laptop-code"></i> Projects</span></a>
-                <a href="#"><span><i class="fa-solid fa-phone"></i> Contact</span></a>
+                <a href="#intro" class="Active"><span><i class="fa fa-home" aria-hidden="true"></i> Home</span></a>
+                <a href="#about"><span><i class="fa-solid fa-user-tie"></i> About</span></a>
+                <a href=".skill"><span><i class="fa-solid fa-wrench"></i> Skills</span></a>
+                <a href=".projects"><span><i class="fa-duotone fa-laptop-code"></i> Projects</span></a>
+                <a href="#contact"><span><i class="fa-solid fa-phone"></i> Contact</span></a>
                 <a href="#"><i class="fa-solid fa-moon"></i></a>
             </div>
         </div>
@@ -1679,18 +1679,18 @@
                             </div>
                         </div>
                         <div>
-                            <form>
+                            <form name="submit-to-google-sheet">
                                 <div>
-                                    <input required="" name="user_name" class="input_tag" type="text" placeholder="Full Name">
+                                    <input required="" name="User Name" class="input_tag" type="text" placeholder="Full Name">
                                 </div>
                                 <div>
-                                    <input required="" name="user_email" class="input_tag" type="text" placeholder="Email">
+                                    <input required="" name="User Email" class="input_tag" type="text" placeholder="Email">
                                 </div>
                                 <div>
                                     <input required="" class="input_tag" type="number" placeholder="Number">
                                 </div>
                                 <div class="input_message">
-                                    <textarea required="" name="message" class="input_tag_text_message" type="text" placeholder="Your Message"></textarea>
+                                    <textarea required="" name="Message" class="input_tag_text_message" type="text" placeholder="Your Message" rows="6"></textarea>
                                 </div>
                                 <div>
                                     <button class="button-82-pushable" role="button" type="submit" style="width: 97%;">
@@ -1723,5 +1723,16 @@
     });
 </script>
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby8yPJ2KXCagpEUgKRFMyQHCYdyeUJi2noRFJNDrW8EfVJ60UIeWIsINt2fnm7NxwnK/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 <!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->

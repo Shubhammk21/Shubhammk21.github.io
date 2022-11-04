@@ -45,7 +45,7 @@ textarea {
     text-align:left;
     content: "";
     font-size: 12px;
-    height: 110px;
+    /* height: 110px; */
     resize: vertical;
     writing-mode: horizontal-tb !important;
     font-family: monospace;
