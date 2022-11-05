@@ -1,20 +1,20 @@
-.projects{
+#projects{
   position: relative;
   display: block;
 }
-.projects img{
+.project1 img,.project2 img{
   width: 100%;
 }
-.projects>h1{
+#projects>h1{
   text-align: center;
   font-size: 34px;
 }
-.projects>p{
+#projects>p{
   font-size: 10px;
   text-align: center;
   margin-top: -20px;
 }
-.projects>div{
+#projects>div{
   width: 100%;
   background-color: #2222;
 }
@@ -33,7 +33,7 @@
 .project1>div,.project2>div{
   width: 50%;
 }
-#fixing{
+#fixing1,#fixing2{
     left: 11.99%;
     top: 8.6%;
     margin: auto;
@@ -44,7 +44,7 @@
     background-color: #25CF60;
     transition: 500ms;
 }
-#comimg{
+.comimg{
   position: relative;
 }
 .t-stack{
@@ -102,7 +102,7 @@
     width: 90%;
     margin: auto;
   }
-  .projects img{
+  #projects img{
     width: 90%;
   }
 }
