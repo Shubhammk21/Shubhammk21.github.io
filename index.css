@@ -8,24 +8,39 @@ body{
     /* background-image: url(https://img.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg?w=996&t=st=1665852058~exp=1665852658~hmac=71dfca4843baff25df8b5ae07e4808f3fe30fbd4ace86aa04cf187725ce0ef98); */
     /* background-image: url(https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=996&t=st=1665852148~exp=1665852748~hmac=ac49f6aaffb667e18d1722751e9cfaab76cc8961b22f38a85881e7b3a7604168); */
 }
+html{
+    scroll-behavior: smooth;
+}
+.night i{
+    display:block;
+    position: relative;
+    z-index: 100000000000000;
+    font-size: 22px;
+    cursor: pointer;
+}
+#nclick:checked ~.night i:before{
+    content: '\f185';
+}
+/* #nclick:checked ~#amain{
+    border: 1px solid;
+} */
+
 #navbar i{
     color: #0f0;
 }
-nav{
-    width: 98%;
-    z-index: 100000;
-}
 #navbar{
     position: sticky;
-    width: 96%;
+    width: 97.2%;
+    margin-top: -0.6%;
     top:0;
-    left: 0;
-    background-color:#111;
+    margin-left: -0.6%;
+    background-color:#0d1117;
     box-shadow: rgba(249, 247, 247, 0.45) 0px 3px 8px;
     display: flex;
     padding: 0.5% 2%;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000000;
 }
 #logo{
     width: 10%;
@@ -35,7 +50,7 @@ nav{
     height: 40%;
 }
 #icon{
-    width: 60%;
+    width: 50%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -53,7 +68,7 @@ nav{
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 1px;
-    color: #0f0;
+    color: #fff;
     /* background-color:#; */
     transition: 0.25s;
     transition-delay: 0s;
@@ -100,8 +115,8 @@ nav{
     width: 15px;
     height: 2px;
     background-color: #222;
-    box-shadow: -5px -8px 0 #0f0,
-                -5px 8px 0 #0f0;
+    box-shadow: -5px -8px 0 #fff,
+                -5px 8px 0 #fff;
     transition: width 0.25s,left 0.25s,height 0.25s, box-shadow 0.25s;
     transition-delay: 0.5s,0.25s,0s,0s;           
 }
@@ -126,10 +141,14 @@ nav{
     width: 60%;
     margin: auto;
     margin-top: 50px;
+    /* box-shadow: rgba(0, 0, 0, 0.949) 0px 3px 6px, rgba(20, 25, 25, 0.824) 0px 3px 6px; */
     justify-content: space-between;
     align-items: center;
     /* background-color:rgba(20, 8, 8, 0.71); */
 }
+/* #mainUnit{
+    width: 100%;
+} */
 #intro>div{
     width: 50%;
 }
@@ -301,7 +320,10 @@ input[type="checkbox"]{
 }
 @media screen and (max-width:880px){
     #navbar{
-        padding: 2% ;
+        padding: 1% ;
+        width: 100.1%;
+        margin-left: -1.1%;
+        margin-top: -1%;
     }
     nav .menu-btn i{
         display:block;

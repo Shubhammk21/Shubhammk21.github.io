@@ -1,6 +1,7 @@
 #projects{
   position: relative;
   display: block;
+  margin-top: 60px;
 }
 .project1 img,.project2 img{
   width: 100%;
@@ -17,6 +18,8 @@
 #projects>div{
   width: 100%;
   background-color: #2222;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .project1,.project2{
     width: 78%;
@@ -28,6 +31,7 @@
     text-align: left;
     margin-bottom: 50px;
     margin-top: 50px;
+    border-radius: 30px;
     box-shadow: rgba(243, 243, 245, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .project1>div,.project2>div{
@@ -71,17 +75,21 @@
       margin-bottom: 50px;
   
   }
+  .project1 img,.project2 img{
+    width: 100%;
+  }
   .project1>div,.project2>div{
     width: 100%;
     padding: 2%;
   }
-  #fixing{
-      left: 16.85%;
-      top: 11.8%;
+  #fixing1,#fixing2{
+      left: 13.15%;
+      top: 11.0%;
       margin: auto;
       /* width: 180px; */
-      width: 66.3%;
-      height: 72%;        
+      width: 73.6%;
+      height: 73.2%;  
+      border-radius: 0px 0px 2% 2%;      
   }
   .t-stack{
     align-items: center;
@@ -102,7 +110,7 @@
     width: 90%;
     margin: auto;
   }
-  #projects img{
+  /* #projects img{
     width: 90%;
-  }
+  } */
 }

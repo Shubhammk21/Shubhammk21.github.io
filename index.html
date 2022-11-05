@@ -854,11 +854,14 @@
             </label>
             <div id="icon">
                 <a href="#intro" class="Active"><span><i class="fa fa-home" aria-hidden="true"></i> Home</span></a>
-                <a href="#about"><span><i class="fa-solid fa-user-tie"></i> About</span></a>
-                <a href="#skill"><span><i class="fa-solid fa-wrench"></i> Skills</span></a>
-                <a href="#projects"><span><i class="fa-duotone fa-laptop-code"></i> Projects</span></a>
-                <a href="#contact"><span><i class="fa-solid fa-phone"></i> Contact</span></a>
-                <a href="#"><i class="fa-solid fa-moon"></i></a>
+                <a href="#about_space"><span><i class="fa-solid fa-user-tie"></i> About</span></a>
+                <a href="#skill_space"><span><i class="fa-solid fa-wrench"></i> Skills</span></a>
+                <a href="#projects_space"><span><i class="fa-duotone fa-laptop-code"></i> Projects</span></a>
+                <a href="#contact_space"><span><i class="fa-solid fa-phone"></i> Contact</span></a>
+                <input type="checkbox" id="nclick">
+                <label for="nclick" class="night">
+                    <i class="fa-solid fa-moon"></i>
+                </label>     
             </div>
         </nav>
     <div id="mainUnit">
@@ -872,7 +875,7 @@
                 <button class="button-82-pushable" role="button">
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
-                    <a href="Send_Mac101_resume.pdf" download class="button-82-front text">
+                    <a href="5_nov_resume_pOk.pdf" download class="button-82-front text">
                       Download Resume
                     </a>
                   </button>
@@ -884,6 +887,7 @@
                 <img src="https://fuertedevelopers.com/assets/img/aboutus.gif" alt="">
             </div>
         </div>
+        <div id="about_space"></div>
         <div id="about">
             <h1>About Me</h1>
             <p style="text-align: center;">My Introduction</p>
@@ -1497,6 +1501,7 @@
             <div class="graph-1"><p align="center"><a href="https://github.com/Shubhammk21"><span><img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubhammk21&amp;theme=dracula&amp;bg_color=0D1117"></span></a></p></div>
             <div class="graph"><p align="center"><a href="https://github.com/Shubhammk21/github-readme-activity-graph"><img alt="Shubhammk21 Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=Shubhammk21&amp;bg_color=0D1117&amp;color=5BCDEC&amp;line=5BCDEC&amp;point=FFFFFF&amp;hide_border=true"></a></p></div>
         </div>
+        <div id="skill_space"></div>
         <div id="skill">
             <h1>Professional Skillset</h1>
             <div id="pskill">
@@ -1548,7 +1553,7 @@
                     <p>SpringToolSuite4</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img  style="background-color: white;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png" alt="">
+                    <img id="gitimg" style="background-color: white;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png" alt="">
                     <p>GitHub</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
@@ -1557,6 +1562,8 @@
                 </div>
             </div>
         </div>
+        <div>
+        <div id="projects_space"></div>
         <div id="projects">
             <h1>Projects</h1>
             <p>The things I make</p>
@@ -1633,11 +1640,15 @@
            </div>
             </div>
         </div>
+        <div>
+        <div id="contact_space">
+
+        </div>
         <div id="contact">
             <h1>Get in Touch</h1>
             <p style="margin-top: -24px; font-size: 10px;"> Contact Me</p>
             <div class="contact_con">
-                <div class="contact_img" style="padding: 80px 0px 0px;">
+                <div class="contact_img">
                     <img src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg" alt="Contact">
                 </div>
                 <div>
@@ -1702,7 +1713,7 @@
             </div>
         </div>
     </div>
-    <div style="position: relative; text-align: center; margin-top: 50px; background-color: #222;bottom: -10px; padding: 5px 0px;"><p>© Shubham. All right reserved</p></div>
+    <div id="shubham" style="position: relative; text-align: center; margin-top: 50px; background-color: #222;bottom: -10px; padding: 5px 0px;"><p>© Shubham. All right reserved</p></div>
 </body>
 </html>
 <Script src="indext.js"></Script>
@@ -1764,5 +1775,41 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <script type="text/javascript">
+    document.querySelector("#nclick").addEventListener('change', e => {
+        if(e.target.checked){
+            document.querySelector("body").style.color = "black";
+            // document.querySelector("body").style.backgroundColor= "white";
+            document.querySelector("#about").style.color= "#fff";
+            document.querySelector("section").style.backgroundColor= "white";
+            document.querySelector("#navbar").style.backgroundColor= "#0d1117";
+            document.querySelectorAll(".row").forEach(row => {
+                    row.style.color = "rgba(241, 231, 231, 0.5)";
+             });
+             document.querySelector("#shubham").style.backgroundColor= "#2222";
+             document.querySelector("#shubham").style.color= "black";
+             document.querySelector("#navbar").style.boxShadow= "rgba(0, 0, 0, 0.949) 0px 3px 6px, rgba(20, 25, 25, 0.916) 5px 0px 10px";
+             document.querySelectorAll("#skill img").forEach(e =>{
+                // e.style.background= "linear-gradient(#fff0 0%, #fff0 0%,#1d1d1d 100%)"
+                // e.style.backgroundColor=
+                e.style.backgroundColor= "#ffffff"
+             });
+        }else{
+            document.querySelector("body").style.color = "#fff";
+            document.querySelector("section").style.backgroundColor= "#111";
+            document.querySelectorAll(".row").forEach(row => {
+                    row.style.color = "rgba(0, 0, 0, 0.5)";
+             });
+             document.querySelector("#shubham").style.backgroundColor= "#222";
+             document.querySelector("#shubham").style.color= "#fff";
+             document.querySelectorAll("#skill img").forEach(e =>{
+                e.style.backgroundColor= "#2222"
+             });
+             document.querySelector("#gitimg").style.backgroundColor= "white";
+        }
+        
+
+    });
+</script>
 
 <!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->

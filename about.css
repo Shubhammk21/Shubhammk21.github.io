@@ -1,15 +1,21 @@
 #about{
-    width: 100%;
     position: relative;
+    width: 101%;
     top: 0;
-    left: 0;
+    left: -0.6%;
     padding-top: 2%;
     padding-bottom: 2%;
     margin: auto;
     margin-top: 80px;
+    /* border: 1px solid; */
     background-color: #0d1117;
     
 }
+/* #mainUnit{
+    width: 100%;
+    /* padding: 0%; */
+ /* background-color: #000; */
+    /* position:fixed; */
 #about>h1{
     text-align: center;
     /* text-decoration: underline; */
@@ -30,10 +36,13 @@
     justify-content: space-between;
     border-radius: 5%;
 }
+#amain>div{
+    width: 50%;
+}
 #amain img{
     max-width: 80%;
     border-radius: 100%;
-
+    float: right;
 }
 #amain img:hover{
     transition: 1s;
@@ -51,6 +60,7 @@
     width: 100%;
     padding: 2%;
     font-size: 1.6rem;
+    text-align: justify;
 }
 #amain>div:nth-child(2){
     width: 80%;
@@ -68,6 +78,7 @@ section{
 }
 section .row{
     position: relative;
+    color:rgba(0, 0, 0, 0.5);
     width: 100%;
     top: -50%;
     display: flex;
@@ -77,7 +88,7 @@ section .row{
     transform: rotate(-30deg);
 } 
 i{
-    color:rgba(0, 0, 0, 0.5);
+    /* color:rgba(0, 0, 0, 0.5); */
     transition: 1s;
     padding: 0 5px;
     user-select: none;
@@ -368,30 +379,39 @@ text.ContributionCalendar-label {
     section .row{
         font-size: 44px;
     }
+    #about{
+        width: 102.1%;
+        left: -1.2%;
+    }
     #amain{
         width: 90%;
         margin: auto;
-        background-color: "https://fakeimg.pl/300x200/";
         display: block;
-        text-overflow: ellipsis;
-        letter-spacing: 1px;
+        text-overflow:ellipsis;
+        /* letter-spacing: 1px; */
     }
     #amain>div{
         width: 90%;
+        display: block;
         margin: auto;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
     #amain img{
         width: 50%;
         height: 50%;
         display: block;
         margin: auto;
+        float: none;
     }
     #amain>div:nth-child(1){
         width: 80%;
         font-size: 1.5rem;
         text-align: justify;
         /* border: 1px solid white; */
+    }
+    #amain>div:nth-child(2){
+        /* border: 1px solid; */
+        margin-bottom: 50px;
     }
     #amain h1{
         font-size: 35px;
@@ -407,6 +427,7 @@ text.ContributionCalendar-label {
     }
     .calendar {
         width: 95%;
+        /* margin-top: 30px; */
     }
     .graph{
         width: 100%;

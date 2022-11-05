@@ -27,8 +27,9 @@
     transform-style: preserve-3d;
     transform: translateZ(100px);
     border-radius: 20px;
-    background: linear-gradient(#0f0 0%, #fff0 70%,#1d1d1d 100%);
+    /* background: linear-gradient(#fff0 0%, #fff0 70%,#1d1d1d 100%); */
     background-size: cover;
+    background-color: #2222;
     box-shadow: rgba(184, 184, 196, 0.759) 0px 7px 29px 0px; 
 }
 #tool>div,#pskill>div{
@@ -77,8 +78,8 @@
         padding: 4%;
     }
     #tool>div,#pskill>div{
-        padding: 4%;
-        margin: 10%;
+        padding: 3%;
+        margin: 6%;
     }
 }
 
