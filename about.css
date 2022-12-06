@@ -373,15 +373,42 @@ text.ContributionCalendar-label {
 }
 #gitihubi{
     font-size: 200%;
-    margin-top: 50px;
+    margin-top: 100px;
+}
+
+.stack_github1 img{
+    width: 100%;
+}
+#fw20_stat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+#fw20_stat>div{
+    width: 48%;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width:1100px) and (min-width: 881px){
+    #fw20_stat{
+        display: block;
+        margin: auto;
+    }
+    #fw20_stat>div{
+        width: 70%;
+        margin: auto;
+    }
 }
 @media screen and (max-width:880px){
     section .row{
         font-size: 44px;
     }
     #about{
-        width: 102.1%;
-        left: -1.2%;
+        width: 103.7%;
+        left: -2%;
+        border-radius: 10px;
     }
     #amain{
         width: 90%;
@@ -446,4 +473,13 @@ text.ContributionCalendar-label {
         font-size: 25px;
         margin-top: 50px;
     }
+    #fw20_stat{
+        display: block;
+        margin: auto;
+    }
+    #fw20_stat>div{
+        width: 75%;
+        margin: auto;
+    }
+    
 }

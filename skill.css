@@ -19,6 +19,8 @@
     /* transform-style: preserve-3d;
     transform: translateZ(20px) */
     /* justify-content: space-around; */
+    border-radius: 30px;
+    padding: 2%;
 }
 #skill img{
     width: 72px;
@@ -33,7 +35,7 @@
     box-shadow: rgba(184, 184, 196, 0.759) 0px 7px 29px 0px; 
 }
 #tool>div,#pskill>div{
-    padding: 5%;
+    padding: 3%;
     margin: 13%;
     background-color: #222;
     /* margin-bottom: 6%; */

@@ -10,8 +10,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.con_fron{
+    font-size: 15px;
+}
 .contact_con>div{
     width: 50%;
+
 }
 #contact img{
     width: 100%;
@@ -85,6 +89,20 @@ textarea {
     width: 101%;
     left: -0.6%;
 }
+@media screen and (max-width:1200px) and (min-width: 881px){
+    .contact_icon{
+        width: 80%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2%;
+    }
+    .contact_con>div{
+        width: 90%;
+    }
+    form{
+        width: 80%;
+        margin: auto;
+    }
+}
 @media screen and (max-width:880px){
     #contact{
         width: 88%;
@@ -144,8 +162,8 @@ textarea {
         font-size: 15px;
       }
       #shubham{
-        width: 102.2%;
-        left: -1.3%;
+        width: 103.9%;
+        left: -2%;
         /* border: 1px solid; */
     }
 }

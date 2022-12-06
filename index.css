@@ -50,7 +50,7 @@ html{
     height: 40%;
 }
 #icon{
-    width: 50%;
+    width: 60%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -69,12 +69,11 @@ html{
     text-decoration: none;
     letter-spacing: 1px;
     color: #fff;
-    /* background-color:#; */
     transition: 0.25s;
     transition-delay: 0s;
     border-radius: 20px 0 20px 0;
-    
 }
+    
 #icon a:hover{
     color: #fff;
     transition-delay: 0.8s;
@@ -320,10 +319,11 @@ input[type="checkbox"]{
 }
 @media screen and (max-width:880px){
     #navbar{
-        padding: 1% ;
-        width: 100.1%;
-        margin-left: -1.1%;
-        margin-top: -1%;
+        padding: .6% ;
+        width: 102.6%;
+        margin-left: -2%;
+        margin-top: -2%;
+        border-radius: 0 0 20px 20px;
     }
     nav .menu-btn i{
         display:block;
@@ -342,16 +342,18 @@ input[type="checkbox"]{
         margin: 20px 0;
     }
     #icon a{
-        border-radius: 0px;
-        width: 100%;
+        border-radius: 30px;
+        width: 60%;
         border: 0px;
         margin: auto;
         padding: 3%;
         /* border: 1px solid #0f0; */
-        margin-right: 100%;
+        /* margin-right: 100%; */
         font-size: 16px;
         display: block;
         transition: 0.6s cubic-bezier(0.068, -0.55, 0.265, 1.55);
+        /* border: 1px solid; */
+        text-align: start;
     }
     #icon{
        padding-top: 30%;
@@ -360,11 +362,12 @@ input[type="checkbox"]{
         top: 0;
         right: -110%;
         background-color: #222;
-        height: 100vh;
+        height: 90%;
         width: 50%;
         text-align: center;
         display: block;
-        transition:all 0.3s ease ;
+        transition:all 0.7s ease ;
+        border-radius: 500px 0 0 520px;
     }
     #click:checked ~#icon a span{
         margin-left: 0px;
@@ -384,10 +387,12 @@ input[type="checkbox"]{
         width: 90%;
         display: block;
         height: 100%;
+        
     }
     #intro>div{
         width:90% ;
         margin: auto;
+        
     }
     #intro h2{
         font-size: 28px;
