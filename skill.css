@@ -13,8 +13,7 @@
 }
 #pskill,#tool{
     display: grid;
-    /* margin-bottom: 100px; */
-    margin-top: 30px;
+    margin-bottom: 80px;
     grid-template-columns:repeat(4,1fr);
     /* transform-style: preserve-3d;
     transform: translateZ(20px) */
