@@ -3,7 +3,7 @@
   display: block;
   margin-top: 60px;
 }
-.project1 img,.project2 img{
+.project1 img,.project2 img,.project3 img{
   width: 100%;
 }
 #projects>h1{
@@ -21,7 +21,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.project1,.project2{
+.project1,.project2,.project3{
     width: 78%;
     padding: 3%;
     margin: auto;
@@ -34,10 +34,10 @@
     border-radius: 30px;
     box-shadow: rgba(243, 243, 245, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.project1>div,.project2>div{
+.project1>div,.project2>div,.project3>div{
   width: 50%;
 }
-#fixing1,#fixing2{
+#fixing1,#fixing2,#fixing3{
     left: 11.99%;
     top: 8.6%;
     margin: auto;
@@ -54,6 +54,11 @@
 .t-stack{
   display: block;
 }
+.t-stack img{
+  width: 45px;
+  height: 39px;
+  padding: 2px;
+}
 .t-stack>p{
   display: flex;
   align-items: center;
@@ -67,7 +72,7 @@
   width: 88%;
 }
 @media screen and (max-width:900px){
-  .project1,.project2{
+  .project1,.project2,.project3{
       width: 80%;
       margin: auto;
       display: block;
@@ -75,14 +80,19 @@
       margin-bottom: 50px;
   
   }
-  .project1 img,.project2 img{
+
+  .project1 a,.project2 a,.project3 a{
+    font-size: 16px;
+  }
+  
+  .project1 img,.project2 img,.project3 img{
     width: 100%;
   }
-  .project1>div,.project2>div{
+  .project1>div,.project2>div,.project3>div{
     width: 100%;
     padding: 2%;
   }
-  #fixing1,#fixing2{
+  #fixing1,#fixing2,#fixing3{
       left: 13.15%;
       top: 11.0%;
       margin: auto;
