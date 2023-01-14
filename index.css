@@ -8,6 +8,13 @@ body{
     /* background-image: url(https://img.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg?w=996&t=st=1665852058~exp=1665852658~hmac=71dfca4843baff25df8b5ae07e4808f3fe30fbd4ace86aa04cf187725ce0ef98); */
     /* background-image: url(https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=996&t=st=1665852148~exp=1665852748~hmac=ac49f6aaffb667e18d1722751e9cfaab76cc8961b22f38a85881e7b3a7604168); */
 }
+@import url(//db.onlinewebfonts.com/c/3e13bee6781c476e142a2bca4d9ab99c?family=Kunstler+Script);
+@font-face {font-family: "Kunstler Script"; src: url("//db.onlinewebfonts.com/t/3e13bee6781c476e142a2bca4d9ab99c.eot"); 
+    src: url("//db.onlinewebfonts.com/t/3e13bee6781c476e142a2bca4d9ab99c.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/3e13bee6781c476e142a2bca4d9ab99c.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/3e13bee6781c476e142a2bca4d9ab99c.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/3e13bee6781c476e142a2bca4d9ab99c.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/3e13bee6781c476e142a2bca4d9ab99c.svg#Kunstler Script") format("svg"); }
 html{
     scroll-behavior: smooth;
 }
@@ -58,6 +65,7 @@ html{
     margin: auto;
     margin-top: -5%;
     font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif
 }
 /* #logo>img{
     width: 100%;
