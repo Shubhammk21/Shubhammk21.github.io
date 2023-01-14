@@ -39,20 +39,6 @@
 #amain>div{
     width: 50%;
 }
-#amain img{
-    max-width: 80%;
-    border-radius: 100%;
-    float: right;
-}
-#amain img:hover{
-    transition: 1s;
-   image-orientation: from-image;
-    width: 70%;
-    transform-origin: 5%;
-   
-    transform-style: preserve-3d;
-    box-shadow: rgba(239, 235, 235, 0.929) 0px 3px 8px;
-}
 #amain h1{
     text-align: center;
 }
@@ -64,6 +50,22 @@
 }
 #amain>div:nth-child(2){
     width: 80%;
+}
+#amain img{
+    max-width: 80%;
+    border-radius: 100%;
+    float: right;
+    transition: .5s;
+    margin: auto;
+}
+#amain>div:nth-child(2) img:hover{
+   image-orientation: from-image;
+    width: 70%;
+    transform: scale(1.5);
+    /* transform-origin:inherit; */
+    transform-style: preserve-3d;
+    box-shadow: rgba(239, 235, 235, 0.929) 0px 3px 8px;
+    transition: 1s;
 }
 section{
     position: fixed;
@@ -211,7 +213,7 @@ svg:not(:root) {
     text-align: right;
     padding: 0 14px 10px 0;
     display: inline-block;
-    float: right;
+    /* float: right; */
 }
 
 .contrib-legend .legend {
@@ -400,13 +402,20 @@ text.ContributionCalendar-label {
         width: 70%;
         margin: auto;
     }
+    #amain>div:nth-child(1){
+        font-size: 1.5rem;
+        text-align:justify;
+    }
+    #amain>div:nth-child(1)>h1{
+        font-size: 38px;
+    }
 }
 @media screen and (max-width:880px){
     section .row{
         font-size: 44px;
     }
     #about{
-        width: 103.7%;
+        width: 103.2%;
         left: -2%;
         border-radius: 10px;
     }
@@ -481,5 +490,14 @@ text.ContributionCalendar-label {
         width: 75%;
         margin: auto;
     }
+    #amain>div:nth-child(2) img:hover{
+        image-orientation: from-image;
+         width: 70%;
+         transform: scale(0.99);
+         /* transform-origin:inherit; */
+         transform-style: preserve-3d;
+         box-shadow: rgba(239, 235, 235, 0.929) 0px 3px 8px;
+         transition: 1s;
+     }
     
 }

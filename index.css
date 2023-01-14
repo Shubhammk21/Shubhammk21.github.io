@@ -43,12 +43,26 @@ html{
     z-index: 1000000;
 }
 #logo{
-    width: 10%;
+    /* width: 10%; */
+    font-family: Kunstler Script;
+    font-size: 20px;
+    line-height: 0px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: .5%;
+    margin-top: -8px;
+    color: #0f0;
 }
-#logo>img{
-    width: 40px;
-    height: 40%;
+#logo>p{
+    display: block;
+    margin: auto;
+    margin-top: -5%;
+    font-size: 10px;
 }
+/* #logo>img{
+    width: 100%;
+    height: 100%;
+} */
 #icon{
     width: 60%;
     position: relative;
@@ -289,11 +303,15 @@ nav .menu-btn i{
 input[type="checkbox"]{
     display: none;
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) and (min-width: 881px){
     .button-82-front {
         font-size: 1.25rem;
-        padding: 12px 42px;
+        padding: 12px 38px;
       }
+      #intro-display h2{
+        line-height: 38px;
+        font-size: 30px;
+    }
     #icon a{
         /* font-size: 8px; */
         padding: 3px 6px;
@@ -311,22 +329,40 @@ input[type="checkbox"]{
     #icon{
         flex-wrap: nowrap;
         width: 75%;
+       
     }
     #intro{
         font-size: 22px;
+    }
+    #logo{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    #logo>h2{
+        font-size: 25px;
+    }
+    #logo>p{
+        font-size: 8px;
+    }
+    #navbar{
+        width: 98.9%;
+        margin-left: -2%;
+        margin-top: -2%;
+
     }
 
 }
 @media screen and (max-width:880px){
     #navbar{
         padding: .6% ;
-        width: 102.6%;
+        width: 102%;
         margin-left: -2%;
         margin-top: -2%;
         border-radius: 0 0 20px 20px;
     }
     nav .menu-btn i{
         display:block;
+        margin-right: 15px;
         position: relative;
         z-index: 10000;
     }
@@ -404,5 +440,13 @@ input[type="checkbox"]{
         display: block;
         width: 100%;
         margin: auto;
+    }
+    #logo{
+        margin-left: 15px;
+        padding-bottom: 1%;
+        padding-top: .6%;
+    }
+    #logo>p{
+        font-size: 8px;
     }
 }
