@@ -865,7 +865,7 @@
                 <a href="#skill_space"><span><i class="fa-solid fa-wrench"></i> Skills</span></a>
                 <a href="#projects_space"><span><i class="fa-duotone fa-laptop-code"></i> Projects</span></a>
                 <a href="#contact_space"><span><i class="fa-solid fa-phone"></i> Contact</span></a>
-                <a href="14_dec_2022.pdf" download><span><i class="fa-solid fa-file"></i> Resume</span></a>
+                <a href="Shubham_resume.pdf" download><span><i class="fa-solid fa-file"></i> Resume</span></a>
                 <input type="checkbox" id="nclick">
                 <label for="nclick" class="night">
                     <i class="fa-solid fa-moon"></i>
@@ -883,7 +883,7 @@
                 <button class="button-82-pushable" role="button">
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
-                    <a href="14_dec_2022.pdf" download class="button-82-front text">
+                    <a href="Shubham_resume.pdf" download class="button-82-front text">
                       Download Resume
                     </a>
                   </button>
@@ -1669,7 +1669,7 @@
                             <button class="button-82-pushable" role="button">
                                 <span class="button-82-shadow"></span>
                                 <span class="button-82-edge"></span>
-                                <a href="https://fluffy-profiterole-029845.netlify.app" target="_blank" class="button-82-front text">
+                                <a href="https://drive.google.com/file/d/11_VX3ncaPIDoxP7UXvGOeACpYfcB_cR6/view?usp=sharing" target="_blank" class="button-82-front text">
                                   Video <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
                                 </a>
                             </button>
@@ -1705,7 +1705,7 @@
                             <button class="button-82-pushable" role="button">
                                 <span class="button-82-shadow"></span>
                                 <span class="button-82-edge"></span>
-                                <a href="https://drive.google.com/file/d/1d9Bei5qzn12L2AVhnrprEKMu4o9S6WxW/view?usp=sharing" target="_blank" class="button-82-front text">
+                                <a href="https://drive.google.com/file/d/1lPBnLXQw1JHGG2KjistecRQlJ-ieIwQN/view?usp=sharing" target="_blank" class="button-82-front text">
                                   Video <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
                                 </a>
                             </button>
@@ -1857,7 +1857,9 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {alert("Message sent sucessful")
+           form.reset();
+        })
         .catch(error => console.error('Error!', error.message))
     })
   </script>

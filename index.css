@@ -363,7 +363,7 @@ input[type="checkbox"]{
 @media screen and (max-width:880px){
     #navbar{
         padding: .6% ;
-        width: 102%;
+        width: 102.5%;
         margin-left: -2%;
         margin-top: -2%;
         border-radius: 0 0 20px 20px;
@@ -451,8 +451,8 @@ input[type="checkbox"]{
     }
     #logo{
         margin-left: 15px;
-        padding-bottom: 1%;
-        padding-top: .6%;
+        padding-bottom: 2%;
+        padding-top: 2%;
     }
     #logo>p{
         font-size: 8px;
