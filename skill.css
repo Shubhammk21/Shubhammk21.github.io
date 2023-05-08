@@ -1,4 +1,4 @@
-#skill{
+#skills{
     width: 65%;
     position: relative;
     text-align: center;
@@ -6,7 +6,7 @@
     margin-top: 50px;
     padding: 2%;
 }
-#skill>div{
+#skills>div{
     /* display: block; */
     background-color: #2222;
     box-shadow: rgba(240, 238, 238, 0.24) 0px 3px 8px;
@@ -21,7 +21,7 @@
     border-radius: 30px;
     padding: 2%;
 }
-#skill img{
+#skills img{
     width: 72px;
     height: 72px;
     padding: 5%;
@@ -51,7 +51,7 @@
      box-shadow:0px 3px 8px #0f0;
      
 }
-#skill h1{
+#skills h1{
     font-size: 34px;
     margin-bottom: 50px;
 }
@@ -59,7 +59,7 @@
     #pskill,#tool{
         grid-template-columns: repeat(3,auto);
     }
-    #skill{
+    #skills{
         width: 70%;
     }
 }
@@ -68,10 +68,10 @@
     #pskill,#tool{
         grid-template-columns: repeat(2,1fr);
     }
-    #skill{
+    #skills{
         width: 80%;
     }
-    #skill img{
+    #skills img{
         transform-style: preserve-3d;
         transform: translateZ(20px);
         width: 60px;
