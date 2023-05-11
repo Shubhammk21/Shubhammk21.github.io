@@ -50,19 +50,19 @@ html{
     z-index: 1000000;
 }
 #logo{
-    /* width: 10%; */
-    font-family:'Courier New', Courier, monospace;
+    width: 10%;
+    /* font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     line-height: 0px;
     text-align: center;
     font-weight: bold;
     padding-bottom: .5%;
     margin-top: -8px;
-    color: #0f0;
+    color: #0f0; */
 }
 #logo img{
     display: block;
-    width: 32%;
+    width: 100%;
     margin-top: 5px;
 }
 /* #logo>img{
