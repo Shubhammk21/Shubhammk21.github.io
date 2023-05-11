@@ -860,12 +860,12 @@
                 <i class="fa fa-bars"></i>
             </label>
             <div id="icon">
-                <a href="#intro" class="Active"><span><i class="fa fa-home" aria-hidden="true"></i> Home</span></a>
-                <a href="#about"><span><i class="fa-solid fa-user-tie"></i> About</span></a>
-                <a href="#skills"><span><i class="fa-solid fa-wrench"></i> Skills</span></a>
-                <a href="#projects_space"><span><i class="fa-duotone fa-laptop-code"></i> Projects</span></a>
-                <a href="#contact_space"><span><i class="fa-solid fa-phone"></i> Contact</span></a>
-                <a href="Shubham_resume.pdf" download><span><i class="fa-solid fa-file"></i> Resume</span></a>
+                <a href="#home" class="nav-link home"><span><i class="fa fa-home" aria-hidden="true"></i> Home</span></a>
+                <a href="#about" class="nav-link about"><span><i class="fa-solid fa-user-tie"></i> About</span></a>
+                <a href="#skills" class="nav-link skills"><span><i class="fa-solid fa-wrench"></i> Skills</span></a>
+                <a href="#projects" class="nav-link projects"><span><i class="fa-duotone fa-laptop-code"></i> Projects</span></a>
+                <a href="#contact" class="nav-link contact"><span><i class="fa-solid fa-phone"></i> Contact</span></a>
+                <a href="Shubham_resume.pdf" download class="nav-link resume"><span><i class="fa-solid fa-file"></i> Resume</span></a>
                 <input type="checkbox" id="nclick">
                 <label for="nclick" class="night">
                     <i class="fa-solid fa-moon"></i>
@@ -901,12 +901,12 @@
             <p style="text-align: center;">My Introduction</p>
             <div id="amain">
                 <div>
-                    <h1>I'M Shubham Singh</h1>
-                    <p>As a self-motivated aspiring JAVA Back-End Developer, Constantly seeking out new challenges and opportunities to expand my skills and knowledge in the field. Passionate about building robust design systems, developing RESTful API, and Dedicated to staying up-to-date with the latest Java Back-End development technologies and techniques.
+                    <h1 id="user-detail-name">I'M Shubham Singh</h1>
+                    <p id="user-detail-intro">As a self-motivated aspiring JAVA Back-End Developer, Constantly seeking out new challenges and opportunities to expand my skills and knowledge in the field. Passionate about building robust design systems, developing RESTful API, and Dedicated to staying up-to-date with the latest Java Back-End development technologies and techniques.
                     </p>
                 </div>
                 <div>
-                    <img src="resume profile.png" alt="">
+                    <img class="home-img" src="resume profile.png" alt="">
                 </div>
             </div>
             <h1 id="gitihubi">Github Contribution</h1>
@@ -1516,220 +1516,226 @@
             <h1>Professional Skillset</h1>
             <div id="pskill">
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                   <img  src="https://vedpaswan01.github.io/images/java-svgrepo-com.svg" alt="">
-                    <p>JAVA</p>
+                   <img class="skills-card-img" src="https://vedpaswan01.github.io/images/java-svgrepo-com.svg" alt="">
+                    <p class="skills-card-name">JAVA</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://cdn.shortpixel.ai/spai/q_lossless+w_188+to_webp+ret_img/https://www.split.io/wp-content/uploads/2017/12/javascript-logo.png" alt="">
-                    <p>JAVASCRIPT</p>
+                    <img class="skills-card-img" src="https://cdn.shortpixel.ai/spai/q_lossless+w_188+to_webp+ret_img/https://www.split.io/wp-content/uploads/2017/12/javascript-logo.png" alt="">
+                    <p class="skills-card-name">JAVASCRIPT</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://cdn.cdnlogo.com/logos/a/19/aws.svg" alt="">
-                    <p>AWS</p>
+                    <img class="skills-card-img" src="https://cdn.cdnlogo.com/logos/a/19/aws.svg" alt="">
+                    <p class="skills-card-name">AWS</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="">
-                    <p>MySQL</p>
+                    <img class="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="">
+                    <p class="skills-card-name">MySQL</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="css.png" alt="">
-                    <p>CSS</p>
+                    <img class="skills-card-img" src="css.png" alt="">
+                    <p class="skills-card-name">CSS</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="">
-                    <p>HTML</p>
+                    <img class="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="">
+                    <p class="skills-card-name">HTML</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://vedpaswan01.github.io/images/spring-icon.svg" alt="">
-                    <p>SPRING BOOT</p>
+                    <img class="skills-card-img" src="https://vedpaswan01.github.io/images/spring-icon.svg" alt="">
+                    <p class="skills-card-name">SPRING BOOT</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://vedpaswan01.github.io/images/hibernate_logo_icon_171004.svg" alt="">
-                    <p>HIBERNATE</p>
+                    <img class="skills-card-img" src="https://vedpaswan01.github.io/images/hibernate_logo_icon_171004.svg" alt="">
+                    <p class="skills-card-name">HIBERNATE</p>
                 </div>
             </div >
             <h1>Tools</h1>
             <div id="tool">
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://cdn.cdnlogo.com/logos/n/91/netlify.svg"></a>
-                    <p>NETLIFY</p>
+                    <img class="skills-card-img" src="https://cdn.cdnlogo.com/logos/n/91/netlify.svg"></a>
+                    <p class="skills-card-name">NETLIFY</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://cdn.cdnlogo.com/logos/v/83/vs-code.svg" alt="">
-                    <p>VS Code</p>
+                    <img class="skills-card-img" src="https://cdn.cdnlogo.com/logos/v/83/vs-code.svg" alt="">
+                    <p class="skills-card-name">VS Code</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="http://3.bp.blogspot.com/-Ajql3_Oijdk/U438gFWH3fI/AAAAAAAAAKE/DFbF4ZLaqjY/s1600/spring-tool-suite-project-logo.png" alt="">
-                    <p>SpringToolSuite4</p>
+                    <img class="skills-card-img" src="http://3.bp.blogspot.com/-Ajql3_Oijdk/U438gFWH3fI/AAAAAAAAAKE/DFbF4ZLaqjY/s1600/spring-tool-suite-project-logo.png" alt="">
+                    <p class="skills-card-name">SpringToolSuite4</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img id="gitimg" style="background-color: white;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png" alt="">
-                    <p>GitHub</p>
+                    <img class="skills-card-img" style="background-color: white;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png" alt="">
+                    <p class="skills-card-name">GitHub</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" alt="">
-                    <p>IntelliJ</p>
+                    <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" alt="">
+                    <p class="skills-card-name">IntelliJ</p>
                 </div>
                 <div data-tilt data-tilt-scale="1.1" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="">
-                    <p>Postman</p>
+                    <img class="skills-card-name" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="">
+                    <p class="skills-card-name">Postman</p>
                 </div>
             </div>
         </div>
         <div>
-        <div id="projects_space"></div>
+        <!-- <div id="projects_space"></div> -->
         <div id="projects">
             <h1>Projects</h1>
             <p>The things I make</p>
             <div>
-               <div class="project1">
-                    <div>
-                        <div class="project_info">
-                            <h1>TimeCamp Website Clone</h1>
-                            <p>The tool is a time tracking software to invoice the employees work based on an hourly rate, measuring the work effectiveness and project management.</p>
-                        </div>
-                        <div class="t-stack">
-                            <p>Tech stack :
-                                <i class="fa-brands fa-html5" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: rgb(78, 149, 231); font-size: 40px;background-color: #222; border-radius: 8px;"></i>
-                                <i class="fa-brands fa-square-js" style="color: rgb(247, 223, 26); font-size: 40px;background-color: #222; border-radius: 8px;"></i>
-                            </p>
-                            <div class="techstack_btn">
-                                <button class="button-82-pushable" role="button">
-                                    <span class="button-82-shadow"></span>
-                                    <span class="button-82-edge"></span>
-                                    <a href="https://sweet-travesseiro-5e07a8.netlify.app" target="_blank"  class="button-82-front text">
-                                      Live <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
-                                    </a>
-                                </button>
-                                <button class="button-82-pushable" role="button">
-                                    <span class="button-82-shadow"></span>
-                                    <span class="button-82-edge"></span>
-                                    <a href="https://github.com/singhprakash14/husky-care-7787" target="_blank" class="button-82-front text">
-                                      GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
-                                    </a>
-                                </button>
+                <div class="project-card">
+                    <div class="project1">
+                        <div>
+                            <div class="project_info">
+                                <h1 class="project-title">TimeCamp Website Clone</h1>
+                                <p class="project-description">The tool is a time tracking software to invoice the employees work based on an hourly rate, measuring the work effectiveness and project management.</p>
+                            </div>
+                            <div class="project-tech-stack">
+                                <p>Tech stack :
+                                    <i class="fa-brands fa-html5" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
+                                    <i class="fa-brands fa-css3-alt" style="color: rgb(78, 149, 231); font-size: 40px;background-color: #222; border-radius: 8px;"></i>
+                                    <i class="fa-brands fa-square-js" style="color: rgb(247, 223, 26); font-size: 40px;background-color: #222; border-radius: 8px;"></i>
+                                </p>
+                                <div class="techstack_btn">
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-deployed-link" href="https://sweet-travesseiro-5e07a8.netlify.app" target="_blank"  class="button-82-front text">
+                                          Live <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-github-link" href="https://github.com/singhprakash14/husky-care-7787" target="_blank" class="button-82-front text">
+                                          GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="comimg">
-                        <img src="laptop-png-6759.png" alt="">
-                        <img src="https://singhprakash14.github.io/static/media/home1.e1596712af27795f48a9.png" alt="" id="fixing1">
-                    </div>
-               </div>
-               <div class="project2">
-                <div>
-                    <div class="project_info">
-                        <h1>AirTable Website Clone</h1>
-                        <p>At its core, Airtable allows you to easily create a database that holds the information that matters for your work, then use it to power the visualizations, processes, and integrations that make up a custom application that's truly unique to you.</p>
+                        <div class="comimg">
+                            <img src="laptop-png-6759.png" alt="">
+                            <img src="https://singhprakash14.github.io/static/media/home1.e1596712af27795f48a9.png" alt="" id="fixing1">
                         </div>
-                    <div class="t-stack">
-                        <p>Tech stack : 
-                            <i class="fa-brands fa-html5" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: rgb(78, 149, 231); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
-                            <i class="fa-brands fa-square-js" style="color: rgb(247, 223, 26); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
-                        </p>
-                        <div class="techstack_btn">
-                            <button class="button-82-pushable" role="button">
-                                <span class="button-82-shadow"></span>
-                                <span class="button-82-edge"></span>
-                                <a href="https://fluffy-profiterole-029845.netlify.app" target="_blank" class="button-82-front text">
-                                  Live <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
-                                </a>
-                            </button>
-                            <button class="button-82-pushable" role="button">
-                                <span class="button-82-shadow"></span>
-                                <span class="button-82-edge"></span>
-                                <a href="https://github.com/Shubhammk21/adroit-desire-6989" target="_blank" class="button-82-front text">
-                                  GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
-                                </a>
-                            </button>
+                   </div>
+                </div>
+                <div class="project-card">
+                    <div class="project2">
+                        <div>
+                            <div class="project_info">
+                                <h1 class="project-title">AirTable Website Clone</h1>
+                                <p class="project-description">At its core, Airtable allows you to easily create a database that holds the information that matters for your work, then use it to power the visualizations, processes, and integrations that make up a custom application that's truly unique to you.</p>
+                            </div>
+                            <div class="project-tech-stack">
+                                <p>Tech stack : 
+                                    <i class="fa-brands fa-html5" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
+                                    <i class="fa-brands fa-css3-alt" style="color: rgb(78, 149, 231); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
+                                    <i class="fa-brands fa-square-js" style="color: rgb(247, 223, 26); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
+                                </p>
+                                <div class="techstack_btn">
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-deployed-link" href="https://fluffy-profiterole-029845.netlify.app" target="_blank" class="button-82-front text">
+                                          Live <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-github-link" href="https://github.com/Shubhammk21/adroit-desire-6989" target="_blank" class="button-82-front text">
+                                          GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="comimg">
-                    <img src="laptop-png-6759.png" alt="" >
-                    <img src="Screenshot (335).png" alt=""  id="fixing2">
-                </div>
-               </div>
-               <div class="project3">
-                <div>
-                    <div class="project_info">
-                        <h1>HR-Management-System</h1>
-                        <p>A human resources management system (HRMS) or human resources information system (HRIS) is a form of human resources (HR) 
-                            software that combines a number of systems and processes to ensure the easy management of human resources, business processes 
-                            and data. I've Develop this HR Management System in Java for learning purpose using MySql Database.</p>
-                    </div>
-                    <div class="t-stack">
-                        <p>Tech stack : 
-                            <i class="fa-brands fa-java" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
-                            <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="" style="background-color: #222; border-radius: 8px; width: 10%;height: 39;padding: 2px;">
-                        </p>
-                        <div class="techstack_btn">
-                            <button class="button-82-pushable" role="button">
-                                <span class="button-82-shadow"></span>
-                                <span class="button-82-edge"></span>
-                                <a href="https://drive.google.com/file/d/11_VX3ncaPIDoxP7UXvGOeACpYfcB_cR6/view?usp=sharing" target="_blank" class="button-82-front text">
-                                  Video <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
-                                </a>
-                            </button>
-                            <button class="button-82-pushable" role="button">
-                                <span class="button-82-shadow"></span>
-                                <span class="button-82-edge"></span>
-                                <a href="https://github.com/Shubhammk21/petite-stew-7564" target="_blank" class="button-82-front text">
-                                  GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
-                                </a>
-                            </button>
+                        <div class="comimg">
+                            <img src="laptop-png-6759.png" alt="" >
+                            <img src="Screenshot (335).png" alt=""  id="fixing2">
                         </div>
-                    </div>
+                       </div>
                 </div>
-                <div class="comimg">
-                    <img src="laptop-png-6759.png" alt="" >
-                    <img src="Screenshot (333).png" alt=""  id="fixing3">
-                </div>
-               </div>
-               <div class="project1">
-                <div>
-                    <div class="project_info">
-                        <h1>CLOTH CUPID</h1>
-                        <p>We have developed this REST API for an Online Shopping Application. This API performs all the fundamental CRUD operations of any Online Shopping Application platform with user validation at every step.</p>
-                    </div>
-                    <div class="t-stack">
-                        <p>Tech stack : 
-                            <i class="fa-brands fa-java" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
-                            <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="" style="background-color: #222; border-radius: 8px; width: 10%;height: 39;padding: 2px;">
-                            <img src="https://vedpaswan01.github.io/images/hibernate_logo_icon_171004.svg" alt="" style="background-color: #222; border-radius: 8px; width: 8%;height: 39;padding: 2px;">
-                            <img src="https://vedpaswan01.github.io/images/spring-icon.svg" alt="" style="background-color: #222; border-radius: 8px; width: 8%;height: 39;padding: 2px;">
-                        </p>
-                        <div class="techstack_btn">
-                            <button class="button-82-pushable" role="button">
-                                <span class="button-82-shadow"></span>
-                                <span class="button-82-edge"></span>
-                                <a href="https://drive.google.com/file/d/1lPBnLXQw1JHGG2KjistecRQlJ-ieIwQN/view?usp=sharing" target="_blank" class="button-82-front text">
-                                  Video <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
-                                </a>
-                            </button>
-                            <button class="button-82-pushable" role="button">
-                                <span class="button-82-shadow"></span>
-                                <span class="button-82-edge"></span>
-                                <a href="https://github.com/Anurag-shekawat/main-transport-9463" target="_blank" class="button-82-front text">
-                                  GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
-                                </a>
-                            </button>
+                <div class="project-card">
+                    <div class="project3">
+                        <div>
+                            <div class="project_info">
+                                <h1 class="project-title">HR-Management-System</h1>
+                                <p class="project-description">A human resources management system (HRMS) or human resources information system (HRIS) is a form of human resources (HR) 
+                                    software that combines a number of systems and processes to ensure the easy management of human resources, business processes 
+                                    and data. I've Develop this HR Management System in Java for learning purpose using MySql Database.</p>
+                            </div>
+                            <div class="project-tech-stack">
+                                <p>Tech stack : 
+                                    <i class="fa-brands fa-java" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
+                                    <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="" style="background-color: #222; border-radius: 8px; width: 10%;height: 39;padding: 2px;">
+                                </p>
+                                <div class="techstack_btn">
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-deployed-link" href="https://drive.google.com/file/d/11_VX3ncaPIDoxP7UXvGOeACpYfcB_cR6/view?usp=sharing" target="_blank" class="button-82-front text">
+                                          Video <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-github-link" href="https://github.com/Shubhammk21/petite-stew-7564" target="_blank" class="button-82-front text">
+                                          GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comimg">
+                            <img src="laptop-png-6759.png" alt="" >
+                            <img src="Screenshot (333).png" alt=""  id="fixing3">
                         </div>
                     </div>
                 </div>
-                <div class="comimg">
-                    <img src="laptop-png-6759.png" alt="">
-                    <img src="Screenshot (338).png" alt="" id="fixing1">
+                <div class="project-card">
+                    <div class="project1">
+                        <div>
+                            <div class="project_info">
+                                <h1 class="project-title">CLOTH CUPID</h1>
+                                <p class="project-description">We have developed this REST API for an Online Shopping Application. This API performs all the fundamental CRUD operations of any Online Shopping Application platform with user validation at every step.</p>
+                            </div>
+                            <div class="project-tech-stack">
+                                <p>Tech stack : 
+                                    <i class="fa-brands fa-java" style="color: rgb(241, 161, 24); font-size: 40px; background-color: #222; border-radius: 8px;"></i>
+                                    <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="" style="background-color: #222; border-radius: 8px; width: 10%;height: 39;padding: 2px;">
+                                    <img src="https://vedpaswan01.github.io/images/hibernate_logo_icon_171004.svg" alt="" style="background-color: #222; border-radius: 8px; width: 8%;height: 39;padding: 2px;">
+                                    <img src="https://vedpaswan01.github.io/images/spring-icon.svg" alt="" style="background-color: #222; border-radius: 8px; width: 8%;height: 39;padding: 2px;">
+                                </p>
+                                <div class="techstack_btn">
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-deployed-link" href="https://drive.google.com/file/d/1lPBnLXQw1JHGG2KjistecRQlJ-ieIwQN/view?usp=sharing" target="_blank" class="button-82-front text">
+                                          Video <i class="fa-solid fa-up-right-from-square" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                    <button class="button-82-pushable" role="button">
+                                        <span class="button-82-shadow"></span>
+                                        <span class="button-82-edge"></span>
+                                        <a class="project-github-link" href="https://github.com/Anurag-shekawat/main-transport-9463" target="_blank" class="button-82-front text">
+                                          GitHub <i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comimg">
+                            <img src="laptop-png-6759.png" alt="">
+                            <img src="Screenshot (338).png" alt="" id="fixing1">
+                        </div>
+                   </div>
                 </div>
-           </div>
             </div>
         </div>
         <div>
-        <div id="contact_space">
-
-        </div>
+    
         <div id="contact">
             <h1>Get in Touch</h1>
             <p style="margin-top: -24px; font-size: 10px;"> Contact Me</p>
@@ -1743,28 +1749,28 @@
                             <div class="button-82-pushable" role="button">
                                 <span class="button-82-shadow"></span>
                                 <span class="button-82-edge"></span>
-                                <a href="mailto:Shubhammk21@gmail.com" target="_blank" rel="noopener norefferer" target="_blank"  class="button-82-front text" style="background-color:#b2584c ;">
+                                <a id="contact-email" href="mailto:Shubhammk21@gmail.com" target="_blank" rel="noopener norefferer" target="_blank"  class="button-82-front text" style="background-color:#b2584c ;">
                                     <span class="con_fron"><i class="fa-regular fa-envelope" style="color:white; font-size: 20px;"></i> Gmail</span>
                                 </a>
                             </div>
                             <div class="button-82-pushable" role="button">
                                 <span class="button-82-shadow"></span>
                                 <span class="button-82-edge"></span>
-                                <a href="https://github.com/Shubhammk21" target="_blank"  class="button-82-front text" rel="noopener norefferer" target="_blank">
+                                <a id="contact-github" href="https://github.com/Shubhammk21" target="_blank"  class="button-82-front text" rel="noopener norefferer" target="_blank">
                                     <span class="con_fron"><i class="fa-brands fa-github" style="color:white; font-size: 20px;"></i>  GitHub</span>
                                 </a>
                             </div>
                             <div class="button-82-pushable" role="button">
                                 <span class="button-82-shadow"></span>
                                 <span class="button-82-edge"></span>
-                                <a href="https://linkedin.com/in/shubham-singh-47732316b" target="_blank" rel="noopener norefferer" target="_blank"  class="button-82-front text" style="background-color:#0E76A8 ;">
+                                <a id="contact-linkedin" href="https://linkedin.com/in/shubham-singh-47732316b" target="_blank" rel="noopener norefferer" target="_blank"  class="button-82-front text" style="background-color:#0E76A8 ;">
                                     <span class="con_fron"><i class="fa-brands fa-linkedin" style="color:white; font-size: 20px;"></i> Linkedln</span>
                                 </a>
                             </div>
                             <div class="button-82-pushable" role="button">
                                 <span class="button-82-shadow"></span>
                                 <span class="button-82-edge"></span>
-                                <a href="https://wa.me/message/+918889441033" target="_blank" rel="noopener norefferer" target="_blank"  class="button-82-front text" style="background-color:#25d366 ;">
+                                <a id="contact-phone" href="https://wa.me/message/+918889441033" target="_blank" rel="noopener norefferer" target="_blank"  class="button-82-front text" style="background-color:#25d366 ;">
                                     <span class="con_fron"><i class="fa-brands fa-whatsapp" style="color:white; font-size: 20px;"></i> 8889441033</span>
                                 </a>
                             </div>
@@ -1877,7 +1883,7 @@
              document.querySelector("#shubham").style.backgroundColor= "#2222";
              document.querySelector("#shubham").style.color= "black";
              document.querySelector("#navbar").style.boxShadow= "rgba(0, 0, 0, 0.949) 0px 3px 6px, rgba(20, 25, 25, 0.916) 5px 0px 10px";
-             document.querySelectorAll("#skill img").forEach(e =>{
+             document.querySelectorAll("#skills img").forEach(e =>{
                 // e.style.background= "linear-gradient(#fff0 0%, #fff0 0%,#1d1d1d 100%)"
                 // e.style.backgroundColor=
                 e.style.backgroundColor= "#ffffff"
@@ -1890,7 +1896,7 @@
              });
              document.querySelector("#shubham").style.backgroundColor= "#222";
              document.querySelector("#shubham").style.color= "#fff";
-             document.querySelectorAll("#skill img").forEach(e =>{
+             document.querySelectorAll("#skills img").forEach(e =>{
                 e.style.backgroundColor= "#2222"
              });
              document.querySelector("#gitimg").style.backgroundColor= "white";
