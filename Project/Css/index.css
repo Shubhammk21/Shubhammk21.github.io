@@ -300,6 +300,37 @@ html{
 .button-82-pushable:focus:not(:focus-visible) {
   outline: none;
 }
+/* this is video or git link button name will changed */
+.project-deployed-link, .project-github-link{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    /* background: rgb(43, 40, 41); */
+    background: #222;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  .button-82-pushable:hover .project-deployed-link ,.button-82-pushable:hover .project-github-link{
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  .button-82-pushable:active .project-deployed-link,  .button-82-pushable:active .project-github-link {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+
+
 nav .menu-btn i{
     color: #0f0;
     font-size: 22px;
@@ -310,7 +341,7 @@ input[type="checkbox"]{
     display: none;
 }
 @media screen and (max-width:1200px) and (min-width: 881px){
-    .button-82-front {
+    .button-82-front, .project-deployed-link, .project-github-link {
         font-size: 1.25rem;
         padding: 12px 38px;
       }
