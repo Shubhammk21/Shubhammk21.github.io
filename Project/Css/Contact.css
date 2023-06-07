@@ -86,8 +86,8 @@ textarea {
     font-size: 34px;
 }
 #shubham{
-    width: 101%;
-    left: -0.6%;
+    width: 100%;
+    /* left: -0.6%; */
 }
 @media screen and (max-width:1200px) and (min-width: 881px){
     .contact_icon{
