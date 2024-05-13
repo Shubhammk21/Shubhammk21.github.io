@@ -2165,35 +2165,6 @@
     <div id="shubham" style="position: relative; text-align: center; margin-top: 50px; background-color: #222;bottom: -10px; padding: 5px 0px;"><p>© Shubham. All right reserved</p></div>
 </body>
 </html>
-<script>
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-        (function () {
-            function refreshCSS() {
-                var links = document.querySelectorAll("link[rel='stylesheet']");
-                links.forEach(function(link) {
-                    var href = link.getAttribute('href');
-                    link.setAttribute('href', href + (href.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + new Date().valueOf());
-                });
-            }
-            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-            var address = protocol + window.location.host + window.location.pathname + '/ws';
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-                if (msg.data == 'reload') window.location.reload();
-                else if (msg.data == 'refreshcss') refreshCSS();
-            };
-            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                console.log('Live reload enabled.');
-                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-            }
-        })();
-    }
-    else {
-        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-</script>
-
 <script>//this function help to save message in sheet
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzdsFravNWNPfVvRADkbdU7ByuJUJay9zJcPO1bo3-gnSRiiNqeAUsrpKsnCIbe0jE/exec'
     const form = document.forms['submit-to-google-sheet']
