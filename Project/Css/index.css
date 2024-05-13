@@ -176,10 +176,11 @@ html{
 }
 #intro-display span{
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
+
 }
 #intro-display h2{
-    line-height: 25px;
+    line-height: 15px;
     font-size: 34px;
 }
 #intro-display{

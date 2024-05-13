@@ -521,3 +521,38 @@ var VanillaTilt = (function () {
 //   hover= document.querySelector("i").addEventListener("mouseleave" ,function(event){
 //     hover.style.color="#111";
 // 
+//333333333333333333333333333333333333333333333333333333this help in dark to light mode 33333333333333333333333333333333333333333333333//
+document.querySelector("#nclick").addEventListener('change', e => {
+  if(e.target.checked){
+      document.querySelector("body").style.color = "black";
+      // document.querySelector("body").style.backgroundColor= "white";
+      document.querySelector("#about").style.color= "#fff";
+      document.querySelector("section").style.backgroundColor= "white";
+      document.querySelector("#nav-menu").style.backgroundColor= "#0d1117";
+      document.querySelectorAll(".row").forEach(row => {
+              row.style.color = "rgba(241, 231, 231, 0.5)";
+       });
+       document.querySelector("#shubham").style.backgroundColor= "#2222";
+       document.querySelector("#shubham").style.color= "black";
+       document.querySelector("#nav-menu").style.boxShadow= "rgba(0, 0, 0, 0.949) 0px 3px 6px, rgba(20, 25, 25, 0.916) 5px 0px 10px";
+       document.querySelectorAll(".skills-card-img").forEach(e =>{
+          // e.style.background= "linear-gradient(#fff0 0%, #fff0 0%,#1d1d1d 100%)"
+          // e.style.backgroundColor=
+          e.style.backgroundColor= "#ffffff"
+       });
+  }else{
+      document.querySelector("body").style.color = "#fff";
+      document.querySelector("section").style.backgroundColor= "#111";
+      document.querySelectorAll(".row").forEach(row => {
+              row.style.color = "rgba(0, 0, 0, 0.5)";
+       });
+       document.querySelector("#shubham").style.backgroundColor= "#222";
+       document.querySelector("#shubham").style.color= "#fff";
+       document.querySelectorAll(".skills-card-img").forEach(e =>{
+          e.style.backgroundColor= "#2222"
+          
+       });
+       document.querySelector("#gitimg").style.backgroundColor= "white";
+  }
+  
+}); 
