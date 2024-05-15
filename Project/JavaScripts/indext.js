@@ -556,3 +556,27 @@ document.querySelector("#nclick").addEventListener('change', e => {
   }
   
 }); 
+
+//3333333333333333333333333333333333 this function help hide extra project only top two open 33333333333333333333//
+let chkLoadM= document.querySelector("#loadMoreChk");
+let projects = document.querySelectorAll(".project-card");
+let loadProjectText= document.querySelector("#loadMore>label");
+
+for(let i=2; i<projects.length; i++){
+  projects[i].style. display="none";
+}
+chkLoadM.addEventListener('change', e => {
+
+  if(e.target.checked){
+    for(let i=2; i<projects.length; i++){
+      projects[i].style. display="block";
+    }
+    loadProjectText.innerHTML= "👆👆 HIDE 👆👆";
+  }
+  else{
+    for(let i=2; i<projects.length; i++){
+      projects[i].style. display="none";
+    }
+    loadProjectText.innerHTML= "👇👇 LOAD MORE 👇👇";
+  }
+});
