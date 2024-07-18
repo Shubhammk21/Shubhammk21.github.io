@@ -338,6 +338,23 @@ nav .menu-btn i{
     cursor: pointer;
     display: none;
 }
+#ads1{
+    width: 80%;
+    margin: auto;
+    position: relative; 
+    text-align: center;
+}
+#ads1>a>img{
+    width: 60%;
+}
+#banner1 iframe{
+    position: absolute;
+    margin: auto;
+    align-items: center;
+    /* padding: 0% 20%; */
+    border: 1px solid;
+    left: calc((100% - 320px)/2)
+}
 input[type="checkbox"]{
     display: none;
 }
@@ -436,7 +453,7 @@ input[type="checkbox"]{
         top: 0;
         right: -110%;
         background-color: #222;
-        height: 90%;
+        height: 100%;
         width: 50%;
         text-align: center;
         display: block;
@@ -481,10 +498,13 @@ input[type="checkbox"]{
     }
     #logo{
         margin-left: 15px;
-        padding-bottom: 2%;
-        padding-top: 2%;
+        padding-bottom: 4%;
+        padding-top: 4%;
     }
     #logo>p{
         font-size: 8px;
+    }
+    #logo img{
+        width: 100%;
     }
 }
