@@ -82,8 +82,8 @@ export default function Loader({
         </div>
 
         {/* Headline */}
-        <h3 className={css.title}>WebZova</h3>
-        <p className={css.subtitle}>Building fast, modern digital products…</p>
+        <h3 className={css.title}>Shubham Singh</h3>
+        <p className={css.subtitle}>Java Full Stack-Developer</p>
 
         {/* Progress bar */}
         <div className={css.progressWrap} aria-hidden>
