@@ -1,0 +1,73 @@
+.legal-page {
+  background: radial-gradient(
+      circle at top,
+      rgba(56, 189, 248, 0.15),
+      transparent 55%
+    ),
+    #020617;
+  color: #e5e7eb;
+  padding: 6rem 1.5rem;
+}
+
+.legal-hero {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.legal-kicker {
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+.legal-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.legal-updated {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.legal-card {
+  max-width: 900px;
+  margin: 0 auto 1.75rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #050816, #020617);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.6);
+}
+
+.legal-card h2 {
+  color: #38bdf8;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-card ul {
+  padding-left: 1.25rem;
+}
+
+.legal-card li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-card a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.legal-card a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: #f8fafc;
+}

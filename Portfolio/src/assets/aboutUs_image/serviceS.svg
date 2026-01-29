@@ -1,0 +1,94 @@
+<svg
+  width="64"
+  height="64"
+  viewBox="0 0 64 64"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Glow background (optional, looks nice on dark) -->
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(32 32) rotate(90) scale(32)">
+      <stop stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="accentStroke" x1="16" y1="10" x2="48" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bgGlow)" />
+
+  <!-- Monitor frame -->
+  <rect
+    x="12"
+    y="16"
+    width="32"
+    height="24"
+    rx="4"
+    stroke="url(#accentStroke)"
+    stroke-width="1.8"
+    fill="rgba(15,23,42,0.8)"
+  />
+
+  <!-- Monitor inner border -->
+  <rect
+    x="14.5"
+    y="18.5"
+    width="27"
+    height="19"
+    rx="3"
+    stroke="#1E293B"
+    stroke-width="1.2"
+  />
+
+  <!-- Bars (analytics / business metrics) -->
+  <rect x="18" y="32" width="3" height="6" rx="1" fill="#38BDF8"/>
+  <rect x="24" y="29" width="3" height="9" rx="1" fill="#38BDF8"/>
+  <rect x="30" y="26" width="3" height="12" rx="1" fill="#38BDF8"/>
+  <rect x="36" y="23" width="3" height="15" rx="1" fill="#38BDF8"/>
+
+  <!-- Monitor stand -->
+  <rect
+    x="22"
+    y="41"
+    width="12"
+    height="2.2"
+    rx="1.1"
+    fill="#1F2937"
+  />
+  <rect
+    x="20"
+    y="44"
+    width="16"
+    height="3"
+    rx="1.5"
+    fill="#020617"
+    stroke="#1E293B"
+    stroke-width="1"
+  />
+
+  <!-- Gear (software / system configuration) -->
+  <circle
+    cx="46"
+    cy="24"
+    r="7"
+    fill="#020617"
+    stroke="url(#accentStroke)"
+    stroke-width="1.6"
+  />
+
+  <!-- Gear teeth (simplified) -->
+  <path
+    d="M46 18.8V19.9M46 28.1V29.2M41.9 24H40.8M51.2 24H50.1M42.9 20.9L42.1 20.1M49.9 27.9L49.1 27.1M42.9 27.1L42.1 27.9M49.9 20.1L49.1 20.9"
+    stroke="#38BDF8"
+    stroke-width="1.3"
+    stroke-linecap="round"
+  />
+
+  <!-- Gear inner circle -->
+  <circle cx="46" cy="24" r="2.2" fill="#38BDF8"/>
+</svg>

@@ -1,0 +1,172 @@
+.projectSection {
+  margin-top: 4rem;
+  padding: 4rem 0 4.5rem;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 55%),
+    #020617;
+}
+
+/* Header text */
+.projectHeader {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.sectionTag {
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+
+.projectTitle {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(to right, #f3f4f6, #d5f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectSubtitle {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Swiper wrapper */
+.projectSwiper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem;
+}
+
+/* Each slide */
+.projectSlide {
+  position: relative;
+  width: 320px;
+  max-width: 30vw;
+  aspect-ratio: 15 / 8;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #020617;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.75);
+}
+
+/* Slide image */
+.projectSlide img {
+  width: 100%;
+
+  object-fit: cover;
+  display: block;
+  transition:
+    transform 0.6s ease,
+    opacity 0.3s ease;
+}
+
+/* Gradient overlay for readability */
+.projectSlide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(3, 7, 18, 0.9),
+    rgba(3, 7, 18, 0.55),
+    transparent 45%
+  );
+  pointer-events: none;
+}
+
+/* Hover zoom */
+.projectSlide:hover img {
+  transform: scale(1.05);
+}
+
+/* Text on slide */
+.slideMeta {
+  position: absolute;
+  width: 100%;
+  /* left: 1.25rem; */
+  background: radial-gradient(
+    circle at top,
+    #686a6e 0%,
+    #101013 55%,
+    #060609 100%
+  );
+  /* right: 1.25rem; */
+  bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.4rem; */
+
+  color: #f9fafb;
+  padding: 30px;
+}
+
+.slideMeta h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Tag button */
+.slideTag {
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 189, 248, 0.8) !important;
+  background: rgba(15, 23, 42, 0.85) !important;
+  color: #e0faff !important;
+}
+
+/* Swiper pagination bullets */
+.projectSwiper .swiper-pagination-bullet {
+  background: rgba(148, 163, 184, 0.6);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px !important;
+}
+
+.projectSwiper .swiper-pagination-bullet-active {
+  background: #38bdf8;
+  width: 18px;
+  border-radius: 999px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projectSection {
+    margin-top: 3rem;
+    padding: 3.5rem 0 3.75rem;
+  }
+
+  .projectHeader {
+    margin-bottom: 2.25rem;
+  }
+
+  .projectSwiper {
+    padding-top: 2rem;
+  }
+
+  .projectSlide {
+    min-width: 260px;
+    aspect-ratio: 16 / 11;
+  }
+}
+@media (max-width: 576px) {
+  .projectSwiper {
+    width: 100%;
+  }
+  .projectSlide {
+    min-width: 300px;
+  }
+}

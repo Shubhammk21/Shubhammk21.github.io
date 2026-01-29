@@ -1,0 +1,233 @@
+/* ===== STICKY NAV WRAPPER ===== */
+#sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #050507;
+}
+
+/* align items nicely */
+.navbar > .container {
+  align-items: center !important;
+}
+
+/* main navbar */
+.site-navbar {
+  padding: 0.35rem 0;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* brand */
+#logo {
+  border-radius: 999px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.6rem;
+  gap: 0.4rem;
+}
+
+#logo img {
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
+
+#logo h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* container width */
+#icon,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  margin: auto;
+  max-height: 100%;
+}
+@media (min-width: 992px) {
+  #icon {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+/* nav collapse */
+#basic-navbar-nav {
+  font-size: 1rem;
+  align-items: center;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+
+  margin-top: 20px;
+}
+
+/* nav list */
+#meAutoId {
+  text-transform: uppercase;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 0.35rem;
+}
+
+/* nav links */
+#basic-navbar-nav a.navLink {
+  display: block;
+  padding: 25px 20px;
+  position: relative;
+  color: rgba(209, 213, 219, 0.85);
+  font-size: 1rem;
+  letter-spacing: 0.13em;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+#basic-navbar-nav a.navLink span {
+  vertical-align: middle;
+}
+
+.navLink svg {
+  font-size: 1.1rem;
+  margin-right: 0.35rem;
+}
+
+/* active link text color */
+#basic-navbar-nav .active_55 {
+  color: #e5f2ff;
+}
+
+/* hover */
+#basic-navbar-nav a.navLink:hover {
+  color: #38bdf8;
+}
+
+/* ===== MOVING PILL SELECTOR ===== */
+
+.horiSelector {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 55%),
+    #020617;
+
+  margin-top: 0.95rem;
+  transition:
+    top 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    left 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    width 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+/* corner decor (optional, subtle) */
+.horiSelector .right2404,
+.horiSelector .left2404 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 0px;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 55%),
+    #020617;
+}
+
+.horiSelector .right2404 {
+  right: -25px;
+}
+.horiSelector .left2404 {
+  left: -25px;
+}
+
+.horiSelector .right2404:before,
+.horiSelector .left2404:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #050507;
+}
+.horiSelector .right2404:before {
+  bottom: 0;
+  right: -25px;
+}
+.horiSelector .left2404:before {
+  bottom: 0;
+  left: -25px;
+}
+
+/* desktop nav layout */
+.me-auto {
+  padding: 0;
+}
+.custom-toggler .navbar-toggler-icon {
+  /* Change the stroke color to your desired RGBA or hex value (e.g., red) */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  font-size: 30px;
+}
+
+/* ===== LIGHT / DARK MODE (if needed) ===== */
+/* You can theme via body classes, but for now we assume dark background */
+
+/* ===== RESPONSIVE ===== */
+
+/* @media (min-width: 992px) {
+  #icon {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #logo img {
+    max-width: 80px;
+  }
+
+} */
+
+@media (max-width: 991px) {
+  #basic-navbar-nav a.navLink {
+    padding: 0.9rem 1.4rem;
+    font-size: 0.85rem;
+  }
+
+  .navbar > .container {
+    align-items: center !important;
+  }
+
+  #logo img {
+    max-width: 72px;
+  }
+  #logo > h1 {
+    display: none;
+  }
+
+  .me-auto {
+    padding: 0.8rem 0;
+  }
+
+  .horiSelector {
+    margin-top: 0.2rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo img {
+    max-width: 74px;
+  }
+
+  #logo h1 {
+    font-size: 1.2rem;
+  }
+}

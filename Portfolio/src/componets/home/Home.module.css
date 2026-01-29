@@ -1,0 +1,9 @@
+.home {
+  width: 100%;
+  padding: 5rem 0 4.5rem;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.14), transparent 10%),
+    radial-gradient(circle at 100% 100%, rgba(15, 23, 42, 0.9), #020617);
+  background-size: cover;
+  background-position: center;
+}

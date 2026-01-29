@@ -1,0 +1,419 @@
+.missionSection {
+  color: #f9fafb;
+} /* Outer container */
+
+.missionStatement {
+  padding: 5rem 0;
+} /* Center inner content with a max-width */
+
+.inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+} /* Layout */
+.missionRow {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+} /* Left column */
+.achievement {
+  display: flex;
+  flex-direction: column;
+} /* Stat cards */
+.statCard {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.5rem 1.75rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #050816, #020617);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease, background 0.25s ease;
+} /* Hover effect */
+.statCard:hover {
+  transform: translateY(-6px);
+  border-color: #0ea5e9;
+  box-shadow: 0 24px 55px rgba(56, 189, 248, 0.22);
+  background: radial-gradient(circle at top left, #020617, #020617);
+} /* Icons */
+.icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+.statCard:hover .icon img {
+  filter: grayscale(0%);
+  opacity: 1;
+} /* Vertical accent line + text block */
+.content {
+  border-left: 2px solid #0ea5e9;
+  padding-left: 1.25rem;
+}
+.content p {
+  margin: 0;
+  font-size: 0.98rem;
+  letter-spacing: 0.02em;
+  color: #e5e7eb;
+} /* Numbers */
+.number {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-bottom: 0.3rem;
+}
+.metallicText {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(to right, #e5e7eb, #ffffff, #cbd5f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.electricAccent {
+  font-size: 2rem;
+  font-weight: 800;
+  font-weight: 800;
+  color: #38bdf8;
+} /* Right column text */
+.acDis {
+  max-width: 620px;
+}
+.mainHeading {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+.brandName {
+  color: #38bdf8;
+}
+.leadText,
+.acDis p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #cbd5f5;
+} /* Responsive */
+@media (max-width: 992px) {
+  .missionRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .acDis {
+    max-width: 100%;
+  }
+  .mainHeading {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    padding: 0 1.25rem;
+  }
+  .missionRow {
+    gap: 2.5rem;
+  }
+  .achievement {
+    width: 100%;
+  }
+  .statCard {
+    padding: 1.25rem 1.4rem;
+  }
+  .mainHeading {
+    font-size: 2rem;
+  }
+  .metallicText {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .missionStatement {
+    padding: 3.5rem 0;
+  }
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+  .leadText,
+  .acDis p {
+    font-size: 0.98rem;
+  }
+}
+/* connector between Mission and Advantages */
+.sectionConnector {
+  margin-top: 2.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: rgba(148, 163, 184, 0.9);
+}
+
+.connectorLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(148, 163, 184, 0.1),
+    rgba(148, 163, 184, 0.5),
+    rgba(148, 163, 184, 0.1)
+  );
+}
+
+.connectorText {
+  white-space: nowrap;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* mobile: center connector text */
+@media (max-width: 768px) {
+  .sectionConnector {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .connectorLine {
+    display: none;
+  }
+}
+.aboutPage {
+  color: #e5e7eb;
+}
+
+/* === HERO SECTION === */
+.heroSection {
+  padding: 5rem 0 3.5rem;
+  background: radial-gradient(
+      circle at 0% 0%,
+      rgba(56, 189, 248, 0.16),
+      transparent 55%
+    ),
+    radial-gradient(circle at 100% 100%, rgba(15, 23, 42, 0.9), #020617);
+}
+
+.heroRow {
+  max-width: 1180px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(148, 163, 184, 0.9);
+  margin-bottom: 0.6rem;
+}
+
+.heroSection h1 {
+  font-size: clamp(2.2rem, 3.4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: rgba(203, 213, 225, 0.92);
+}
+
+/* right side hero card */
+.heroCard {
+  border-radius: 20px;
+  padding: 1.7rem 1.6rem;
+  background: radial-gradient(
+      circle at 10% 0%,
+      rgba(56, 189, 248, 0.16),
+      transparent 65%
+    ),
+    rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.9);
+}
+
+.heroStatLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(148, 163, 184, 0.9);
+  margin-bottom: 0.8rem;
+}
+
+.heroCard ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.heroCard li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 1.4rem;
+  color: rgba(226, 232, 240, 0.92);
+}
+
+.heroCard li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
+}
+
+/* === FOUNDERS SECTION === */
+.foundersSection {
+  padding: 4.8rem 0 5.2rem;
+  background: radial-gradient(
+    circle at top,
+    rgba(56, 189, 248, 0.18),
+    transparent 15%,
+    #020617
+  );
+  border-top: 1px solid rgba(15, 23, 42, 0.9);
+}
+
+.foundersHeader {
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.foundersHeader h2 {
+  font-size: clamp(1.9rem, 3vw, 2.3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.7rem;
+}
+
+.foundersRow {
+  max-width: 1120px;
+  margin: 0 auto;
+  row-gap: 2.2rem;
+}
+
+.founderCol {
+  display: flex;
+}
+
+.founderCard {
+  flex: 1;
+  border-radius: 20px;
+  padding: 1.7rem 1.5rem 1.8rem;
+  background: radial-gradient(
+      circle at 0% 0%,
+      rgba(56, 189, 248, 0.18),
+      transparent 65%
+    ),
+    rgba(15, 23, 42, 0.98);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.9), 0 0 0 1px rgba(15, 23, 42, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease,
+    border-color 0.3s ease, background 0.3s ease;
+}
+
+.founderCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.8);
+  box-shadow: 0 26px 80px rgba(15, 23, 42, 0.95),
+    0 0 32px rgba(56, 189, 248, 0.25);
+  background: radial-gradient(
+      circle at 0% 0%,
+      rgba(56, 189, 248, 0.28),
+      transparent 65%
+    ),
+    rgba(15, 23, 42, 1);
+}
+
+/* avatar / initials */
+.avatarWrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle at 20% 0%,
+    rgba(248, 250, 252, 0.22),
+    rgba(15, 23, 42, 1)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+
+.avatarInitials {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5f2ff;
+}
+
+.founderCard h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.role {
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(148, 163, 184, 0.95);
+  margin-bottom: 0.7rem;
+}
+
+.bio {
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: rgba(226, 232, 240, 0.9);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  .heroSection {
+    padding: 4rem 0 3rem;
+  }
+
+  .heroRow {
+    gap: 2rem;
+  }
+
+  .heroCard {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 3.6rem 0 2.8rem;
+  }
+
+  .foundersSection {
+    padding: 3.8rem 0 4.2rem;
+  }
+
+  .founderCard {
+    padding: 1.5rem 1.3rem 1.6rem;
+  }
+}

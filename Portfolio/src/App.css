@@ -1,0 +1,160 @@
+/* ===========================
+   GLOBAL RESET / BASE
+=========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Root wrapper */
+#root {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #050507; /* unify background */
+}
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+/* Body text: Inter */
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background-color: #050507;
+  color: #b6b7c2;
+  line-height: 1.7;
+  cursor: default !important;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari, Chrome, Opera */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version */
+  cursor: none;
+}
+
+/* Global paragraph */
+p {
+  font-size: 0.98rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0 0 1rem 0; /* use margin instead of padding-top */
+}
+
+/* Images / SVG alignment */
+img,
+svg {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Headings: Montserrat */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  color: #f9fafb;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.25;
+}
+
+/* Metallic hero style for big headings */
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  background: linear-gradient(to right, #d7d7d7, #ffffff, #d0d0d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Slightly smaller headings */
+h2 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Utility class if you ever want NON-metallic headings */
+.plain-heading {
+  -webkit-text-fill-color: initial;
+  background: none;
+  color: #f9fafb;
+}
+
+/* Accent text (tech blue) */
+.text-highlight {
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+/* ===========================
+   LINKS / INTERACTION
+=========================== */
+
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+a:hover {
+  color: #67e8f9;
+  opacity: 0.95;
+}
+
+/* Text selection */
+::selection {
+  background: rgba(0, 212, 255, 0.25);
+  color: #f9fafb;
+}
+
+/* ===========================
+   LAYOUT UTILITIES
+=========================== */
+
+/* Use this for sections to keep consistent padding if needed */
+.section {
+  padding: 4rem 0;
+}
+
+/* Slightly tighter on mobile */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    cursor: auto;
+  }
+}
