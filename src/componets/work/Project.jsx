@@ -12,12 +12,22 @@ function Project() {
   return (
     <section className={css.projectSection} id="projects">
       <Container>
-        <div className={css.projectHeader}>
-          <p className={css.sectionTag}>PROJECTS</p>
-          <h2 className={css.projectTitle}>
-            Selected work & real-world builds
+        <div className="mx-auto mb-16 max-w-[720px] text-center">
+          {/* Tag */}
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-slate-500">
+            PROJECTS
+          </p>
+
+          {/* Title with Gradient Accent */}
+          <h2 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
+            Selected work & real-world <br className="hidden sm:block" />
+            <span className="bg-gradient-to-r from-sky-400 to-indigo-400 bg-clip-text text-transparent">
+              builds
+            </span>
           </h2>
-          <p className={css.projectSubtitle}>
+
+          {/* Subtitle */}
+          <p className="mx-auto max-w-xl text-lg text-slate-400">
             A collection of applications and websites I’ve designed and
             developed using modern web technologies.
           </p>

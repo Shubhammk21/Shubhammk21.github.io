@@ -107,7 +107,7 @@ function SiteNavbar() {
       icon: faWrench,
       label: "Projects",
       to: "/#projects",
-      isActive: pathname === "/" && hash === "#Services",
+      isActive: pathname === "/" && hash === "#projects",
     },
     {
       icon: faUserTie,
